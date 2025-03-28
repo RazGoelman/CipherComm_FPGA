@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.583784",
+   "Default View_TopLeft":"-457,-55",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port temp_sensor -pg 1 -lvl 2 -x 310 -y 490 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port mii_rtl -pg 1 -lvl 2 -x 310 -y 190 -defaultsOSRD
+preplace port mdio_rtl -pg 1 -lvl 2 -x 310 -y 210 -defaultsOSRD
+preplace port acl_spi -pg 1 -lvl 2 -x 310 -y 350 -defaultsOSRD
+preplace port AXI_LITE -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port S_AXI2 -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 2 -x 310 -y 640 -defaultsOSRD
+preplace port S_AXI3 -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port dip_switches_16bits -pg 1 -lvl 2 -x 310 -y 60 -defaultsOSRD
+preplace port dip_switches_16bits_0 -pg 1 -lvl 2 -x 310 -y 10 -defaultsOSRD
+preplace port port-id_ext_spi_clk -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port port-id_iic2intc_irpt -pg 1 -lvl 2 -x 310 -y 510 -defaultsOSRD
+preplace port port-id_ip2intc_irpt -pg 1 -lvl 2 -x 310 -y 230 -defaultsOSRD
+preplace port port-id_ip2intc_irpt1 -pg 1 -lvl 2 -x 310 -y 370 -defaultsOSRD
+preplace port port-id_interrupt -pg 1 -lvl 2 -x 310 -y 660 -defaultsOSRD
+preplace port port-id_ip2intc_irpt2 -pg 1 -lvl 2 -x 310 -y 80 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 1 -x 160 -y 510 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 1 -x 160 -y 210 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 1 -x 160 -y 360 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 1 -x 160 -y 650 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 160 -y 70 -defaultsOSRD
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 1 NJ 230
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 1 NJ 80
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 1 NJ 510
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 1 1 NJ 370
+preplace netloc axi_uartlite_0_interrupt 1 1 1 NJ 660
+preplace netloc microblaze_0_Clk 1 0 1 30 70n
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 1 20 90n
+preplace netloc axi_ethernetlite_0_MDIO 1 1 1 NJ 210
+preplace netloc axi_ethernetlite_0_MII 1 1 1 NJ 190
+preplace netloc axi_gpio_0_GPIO 1 1 1 NJ 60
+preplace netloc axi_iic_0_IIC 1 1 1 NJ 490
+preplace netloc axi_quad_spi_0_SPI_0 1 1 1 NJ 350
+preplace netloc axi_uartlite_0_UART 1 1 1 NJ 640
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 0 1 NJ 190
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 0 1 NJ 50
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 0 1 NJ 490
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 0 1 NJ 330
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 0 1 NJ 630
+levelinfo -pg 1 0 160 310
+pagesize -pg 1 -db -bbox -sgen -150 -10 520 730
+"
+}
+0
