@@ -32,22 +32,28 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity data_transmission is
-  port (
-    clk           : in  std_logic;
-    rst           : in  std_logic;
-    fifo_empty    : in  std_logic;
-    fifo_dout     : in  std_logic_vector(17 downto 0);
-    fifo_rd_en    : out std_logic;
-    tx_data_out   : out std_logic_vector(7 downto 0);
-    tx_valid_out  : out std_logic
+  Port (
+    clk             : in  std_logic;
+    rst             : in  std_logic;
+    fifo_empty      : in  std_logic;
+    fifo_full       : in  std_logic;
+    fifo_dout       : in  std_logic_vector(17 downto 0);
+    fifo_rd_en      : out std_logic;
+    tx_data_out     : out std_logic_vector(7 downto 0);
+    tx_valid_out    : out std_logic;
+    ready_for_data  : out std_logic
   );
-end entity;
+end data_transmission;
 
 architecture Behavioral of data_transmission is
   signal rd_en_int : std_logic := '0';
 
 begin
- -- read from FIFO
+
+  -- Flow control feedback: allow upstream to write only when FIFO not full
+  ready_for_data <= not fifo_full;
+  
+-- Read process from FIFO to UART interface
   process(clk)
   begin
     if rising_edge(clk) then
@@ -56,11 +62,10 @@ begin
         tx_data_out   <= (others => '0');
         tx_valid_out  <= '0';
       else
-        -- Check if FIFO not empty
         if fifo_empty = '0' and fifo_dout(8) = '1' then
-          rd_en_int     <= '1';  -- trigger read
+          rd_en_int     <= '1';  -- Enable read
           tx_data_out   <= fifo_dout(7 downto 0);
-          tx_valid_out  <= fifo_dout(8);  -- 9th bit as valid flag
+          tx_valid_out  <= '1';
         else
           rd_en_int     <= '0';
           tx_valid_out  <= '0';

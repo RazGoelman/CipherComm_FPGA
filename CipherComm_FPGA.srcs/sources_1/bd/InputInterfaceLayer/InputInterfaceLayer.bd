@@ -7,8 +7,7 @@
       "name": "InputInterfaceLayer",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1",
-      "validated": "true"
+      "tool_version": "2021.1"
     },
     "design_tree": {
       "microblaze_0": "",
@@ -62,21 +61,18 @@
         "encryption_layer_0": ""
       },
       "transmission_layer": {
-        "data_transmission_0": "",
-        "fifo_generator_0": ""
+        "fifo_generator_0": "",
+        "data_transmission_0": ""
+      },
+      "reception_layer": {
+        "data_reception_0": ""
       }
     },
     "interface_ports": {
       "mdio_rtl": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:mdio:1.0",
-        "vlnv": "xilinx.com:interface:mdio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:interface:mdio_rtl:1.0"
       },
       "mii_rtl": {
         "mode": "Master",
@@ -114,20 +110,8 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "InputInterfaceLayer_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -138,10 +122,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -151,10 +131,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -174,12 +150,12 @@
       "valid_in": {
         "direction": "I"
       },
-      "tx_data_out_0": {
+      "received_data_0": {
         "direction": "O",
         "left": "7",
         "right": "0"
       },
-      "tx_valid_out_0": {
+      "received_valid_0": {
         "direction": "O"
       }
     },
@@ -2577,23 +2553,41 @@
           "wr_en": {
             "direction": "I"
           },
-          "tx_data_out_0": {
+          "tx_data_out": {
             "direction": "O",
             "left": "7",
             "right": "0"
           },
-          "tx_valid_out_0": {
+          "tx_valid_out": {
             "direction": "O"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
+          "fifo_generator_0": {
+            "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+            "xci_name": "InputInterfaceLayer_fifo_generator_0_0",
+            "xci_path": "ip/InputInterfaceLayer_fifo_generator_0_0/InputInterfaceLayer_fifo_generator_0_0.xci",
+            "inst_hier_path": "transmission_layer/fifo_generator_0",
+            "parameters": {
+              "Almost_Full_Flag": {
+                "value": "false"
+              },
+              "Write_Acknowledge_Flag": {
+                "value": "false"
+              }
+            }
+          },
           "data_transmission_0": {
             "vlnv": "xilinx.com:module_ref:data_transmission:1.0",
             "xci_name": "InputInterfaceLayer_data_transmission_0_0",
             "xci_path": "ip/InputInterfaceLayer_data_transmission_0_0/InputInterfaceLayer_data_transmission_0_0.xci",
             "inst_hier_path": "transmission_layer/data_transmission_0",
             "reference_info": {
-              "ref_type": "unknown",
+              "ref_type": "hdl",
               "ref_name": "data_transmission",
               "boundary_crc": "0x0"
             },
@@ -2612,13 +2606,19 @@
                 "type": "rst",
                 "direction": "I"
               },
-              "encrypted_data_in": {
+              "fifo_empty": {
+                "direction": "I"
+              },
+              "fifo_full": {
+                "direction": "I"
+              },
+              "fifo_dout": {
                 "direction": "I",
-                "left": "7",
+                "left": "17",
                 "right": "0"
               },
-              "valid_in": {
-                "direction": "I"
+              "fifo_rd_en": {
+                "direction": "O"
               },
               "tx_data_out": {
                 "direction": "O",
@@ -2629,21 +2629,7 @@
                 "direction": "O"
               },
               "ready_for_data": {
-                "direction": "I"
-              }
-            }
-          },
-          "fifo_generator_0": {
-            "vlnv": "xilinx.com:ip:fifo_generator:13.2",
-            "xci_name": "InputInterfaceLayer_fifo_generator_0_0",
-            "xci_path": "ip/InputInterfaceLayer_fifo_generator_0_0/InputInterfaceLayer_fifo_generator_0_0.xci",
-            "inst_hier_path": "transmission_layer/fifo_generator_0",
-            "parameters": {
-              "Almost_Full_Flag": {
-                "value": "false"
-              },
-              "Write_Acknowledge_Flag": {
-                "value": "false"
+                "direction": "O"
               }
             }
           }
@@ -2652,20 +2638,26 @@
           "clk_1": {
             "ports": [
               "clk",
-              "data_transmission_0/clk",
-              "fifo_generator_0/clk"
+              "fifo_generator_0/clk",
+              "data_transmission_0/clk"
+            ]
+          },
+          "data_transmission_0_fifo_rd_en": {
+            "ports": [
+              "data_transmission_0/fifo_rd_en",
+              "fifo_generator_0/rd_en"
             ]
           },
           "data_transmission_0_tx_data_out": {
             "ports": [
               "data_transmission_0/tx_data_out",
-              "tx_data_out_0"
+              "tx_data_out"
             ]
           },
           "data_transmission_0_tx_valid_out": {
             "ports": [
               "data_transmission_0/tx_valid_out",
-              "tx_valid_out_0"
+              "tx_valid_out"
             ]
           },
           "din_1": {
@@ -2674,24 +2666,145 @@
               "fifo_generator_0/din"
             ]
           },
-          "encrypted_data_in_1": {
+          "fifo_generator_0_dout": {
             "ports": [
               "fifo_generator_0/dout",
-              "data_transmission_0/encrypted_data_in",
-              "data_transmission_0/valid_in",
-              "data_transmission_0/rst"
+              "data_transmission_0/fifo_dout"
+            ]
+          },
+          "fifo_generator_0_empty": {
+            "ports": [
+              "fifo_generator_0/empty",
+              "data_transmission_0/fifo_empty"
             ]
           },
           "fifo_generator_0_full": {
             "ports": [
               "fifo_generator_0/full",
-              "data_transmission_0/ready_for_data"
+              "data_transmission_0/fifo_full"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "data_transmission_0/rst"
             ]
           },
           "wr_en_1": {
             "ports": [
               "wr_en",
               "fifo_generator_0/wr_en"
+            ]
+          }
+        }
+      },
+      "reception_layer": {
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "rx_data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "rx_valid_in": {
+            "direction": "I"
+          },
+          "received_data_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "received_valid_0": {
+            "direction": "O"
+          }
+        },
+        "components": {
+          "data_reception_0": {
+            "vlnv": "xilinx.com:module_ref:data_reception:1.0",
+            "xci_name": "InputInterfaceLayer_data_reception_0_0",
+            "xci_path": "ip/InputInterfaceLayer_data_reception_0_0/InputInterfaceLayer_data_reception_0_0.xci",
+            "inst_hier_path": "reception_layer/data_reception_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "data_reception",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "rst",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "rst": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "rx_data_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "rx_valid_in": {
+                "direction": "I"
+              },
+              "received_data": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "received_valid": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "data_reception_0/clk"
+            ]
+          },
+          "data_reception_0_received_data": {
+            "ports": [
+              "data_reception_0/received_data",
+              "received_data_0"
+            ]
+          },
+          "data_reception_0_received_valid": {
+            "ports": [
+              "data_reception_0/received_valid",
+              "received_valid_0"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "data_reception_0/rst"
+            ]
+          },
+          "rx_data_in_1": {
+            "ports": [
+              "rx_data_in",
+              "data_reception_0/rx_data_in"
+            ]
+          },
+          "rx_valid_in_1": {
+            "ports": [
+              "rx_valid_in",
+              "data_reception_0/rx_valid_in"
             ]
           }
         }
@@ -2922,7 +3035,20 @@
           "encryption_block/clk",
           "scrambler_block/clk",
           "microblaze_0_axi_periph/M08_ACLK",
-          "transmission_layer/clk"
+          "transmission_layer/clk",
+          "reception_layer/clk"
+        ]
+      },
+      "reception_layer_received_data_0": {
+        "ports": [
+          "reception_layer/received_data_0",
+          "received_data_0"
+        ]
+      },
+      "reception_layer_received_valid_0": {
+        "ports": [
+          "reception_layer/received_valid_0",
+          "received_valid_0"
         ]
       },
       "reset_0_1": {
@@ -2975,7 +3101,9 @@
           "scrambler_axi_0/s_axi_intr_aresetn",
           "encryption_block/reset",
           "scrambler_block/rst",
-          "microblaze_0_axi_periph/M08_ARESETN"
+          "microblaze_0_axi_periph/M08_ARESETN",
+          "transmission_layer/rst",
+          "reception_layer/rst"
         ]
       },
       "scrambler_axi_0_irq": {
@@ -3002,16 +3130,16 @@
           "clk_wiz/clk_in1"
         ]
       },
-      "transmission_layer_tx_data_out_0": {
+      "transmission_layer_tx_data_out": {
         "ports": [
-          "transmission_layer/tx_data_out_0",
-          "tx_data_out_0"
+          "transmission_layer/tx_data_out",
+          "reception_layer/rx_data_in"
         ]
       },
-      "transmission_layer_tx_valid_out_0": {
+      "transmission_layer_tx_valid_out": {
         "ports": [
-          "transmission_layer/tx_valid_out_0",
-          "tx_valid_out_0"
+          "transmission_layer/tx_valid_out",
+          "reception_layer/rx_valid_in"
         ]
       },
       "valid_in": {
