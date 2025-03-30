@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2594C1CDCBA85B6",
+      "boundary_crc": "0xC78607956F160CC7",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../CipherComm_FPGA.gen/sources_1/bd/InputInterfaceLayer",
       "name": "InputInterfaceLayer",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1"
+      "tool_version": "2021.1",
+      "validated": "true"
     },
     "design_tree": {
       "input_layer": {
@@ -76,7 +77,13 @@
       "mdio_rtl": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:mdio:1.0",
-        "vlnv": "xilinx.com:interface:mdio_rtl:1.0"
+        "vlnv": "xilinx.com:interface:mdio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       },
       "mii_rtl": {
         "mode": "Master",
@@ -114,8 +121,20 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "InputInterfaceLayer_sys_clock",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -126,6 +145,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -135,6 +158,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -1321,7 +1348,7 @@
             },
             "hdl_attributes": {
               "BMM_INFO_PROCESSOR": {
-                "value": "microblaze-le > InputInterfaceLayer microblaze_0_local_memory/dlmb_bram_if_cntlr",
+                "value": "microblaze-le > InputInterfaceLayer cpu_layer/microblaze_0_local_memory/dlmb_bram_if_cntlr",
                 "value_src": "default"
               },
               "KEEP_HIERARCHY": {
@@ -2415,7 +2442,7 @@
                 },
                 "hdl_attributes": {
                   "BMM_INFO_ADDRESS_SPACE": {
-                    "value": "byte  0x00000000 32 > InputInterfaceLayer microblaze_0_local_memory/lmb_bram",
+                    "value": "byte  0x00000000 32 > InputInterfaceLayer cpu_layer/microblaze_0_local_memory/lmb_bram",
                     "value_src": "default"
                   },
                   "KEEP_HIERARCHY": {
@@ -3368,7 +3395,7 @@
           "scrambler_block/enable"
         ]
       },
-      "encryption_block_encrypted_data_out": {
+      "encrypted_data_out": {
         "ports": [
           "encryption_block/encrypted_data_out",
           "transmission_layer/din"
