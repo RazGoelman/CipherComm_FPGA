@@ -1,84 +1,94 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.594229",
-   "Default View_TopLeft":"1393,293",
+   "Default View_ScaleFactor":"0.840367",
+   "Default View_TopLeft":"1305,352",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port mdio_rtl -pg 1 -lvl 4 -x 2210 -y -20 -defaultsOSRD
-preplace port mii_rtl -pg 1 -lvl 4 -x 2210 -y -60 -defaultsOSRD
-preplace port dip_switches_16bits -pg 1 -lvl 4 -x 2210 -y 60 -defaultsOSRD
-preplace port temp_sensor -pg 1 -lvl 4 -x 2210 -y -80 -defaultsOSRD
-preplace port acl_spi -pg 1 -lvl 4 -x 2210 -y -40 -defaultsOSRD
-preplace port usb_uart -pg 1 -lvl 4 -x 2210 -y 0 -defaultsOSRD
-preplace port dip_switches_16bits_0 -pg 1 -lvl 4 -x 2210 -y 80 -defaultsOSRD
-preplace port port-id_sys_clock -pg 1 -lvl 0 -x -80 -y 830 -defaultsOSRD
+preplace port mdio_rtl -pg 1 -lvl 4 -x 2250 -y -20 -defaultsOSRD
+preplace port mii_rtl -pg 1 -lvl 4 -x 2250 -y -60 -defaultsOSRD
+preplace port dip_switches_16bits -pg 1 -lvl 4 -x 2250 -y 60 -defaultsOSRD
+preplace port temp_sensor -pg 1 -lvl 4 -x 2250 -y -80 -defaultsOSRD
+preplace port acl_spi -pg 1 -lvl 4 -x 2250 -y -40 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 4 -x 2250 -y 0 -defaultsOSRD
+preplace port dip_switches_16bits_0 -pg 1 -lvl 4 -x 2250 -y 80 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -80 -y 570 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x -80 -y 400 -defaultsOSRD
 preplace port port-id_reset_0 -pg 1 -lvl 0 -x -80 -y 340 -defaultsOSRD
-preplace port port-id_encrypted_valid_out_0 -pg 1 -lvl 4 -x 2210 -y 40 -defaultsOSRD
+preplace port port-id_encrypted_valid_out_0 -pg 1 -lvl 4 -x 2250 -y 40 -defaultsOSRD
 preplace port port-id_enable -pg 1 -lvl 0 -x -80 -y 790 -defaultsOSRD
 preplace port port-id_valid_in -pg 1 -lvl 0 -x -80 -y 770 -defaultsOSRD
-preplace port port-id_received_valid_0 -pg 1 -lvl 4 -x 2210 -y 1020 -defaultsOSRD
-preplace portBus encrypted_data_out_0 -pg 1 -lvl 4 -x 2210 -y 20 -defaultsOSRD
-preplace portBus received_data_0 -pg 1 -lvl 4 -x 2210 -y 1000 -defaultsOSRD
+preplace port port-id_start_frame_0 -pg 1 -lvl 0 -x -80 -y 830 -defaultsOSRD
+preplace port port-id_UART_TXD -pg 1 -lvl 4 -x 2250 -y 792 -defaultsOSRD
+preplace port port-id_tx_busy_0 -pg 1 -lvl 4 -x 2250 -y 820 -defaultsOSRD
+preplace portBus encrypted_data_out_0 -pg 1 -lvl 4 -x 2250 -y 20 -defaultsOSRD
+preplace portBus cmd_id_0 -pg 1 -lvl 0 -x -80 -y 852 -defaultsOSRD
 preplace inst input_layer -pg 1 -lvl 2 -x 1300 -y 20 -defaultsOSRD
 preplace inst interrupt_layer -pg 1 -lvl 2 -x 1300 -y 310 -defaultsOSRD
 preplace inst scrambler_block -pg 1 -lvl 2 -x 1300 -y 540 -defaultsOSRD
-preplace inst encryption_block -pg 1 -lvl 3 -x 1920 -y 150 -defaultsOSRD
-preplace inst transmission_layer -pg 1 -lvl 3 -x 1920 -y 340 -defaultsOSRD
-preplace inst reception_layer -pg 1 -lvl 3 -x 1920 -y 500 -defaultsOSRD
+preplace inst encryption_block -pg 1 -lvl 3 -x 1960 -y 68 -defaultsOSRD
+preplace inst transmission_layer -pg 1 -lvl 3 -x 1960 -y 278 -defaultsOSRD
+preplace inst reception_layer -pg 1 -lvl 3 -x 1960 -y 428 -defaultsOSRD
 preplace inst cpu_layer -pg 1 -lvl 1 -x 670 -y 120 -defaultsOSRD
-preplace inst clock_layer -pg 1 -lvl 1 -x 670 -y 370 -defaultsOSRD
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 2 1050 650 1480
-preplace netloc axi_gpio_0_ip2intc_irpt 1 1 2 1000 660 1470
-preplace netloc axi_iic_0_iic2intc_irpt 1 1 2 1020 670 1540
-preplace netloc axi_quad_spi_0_ip2intc_irpt 1 1 2 1030 680 1530
-preplace netloc axi_uartlite_0_interrupt 1 1 2 990 690 1520
+preplace inst clock_layer -pg 1 -lvl 1 -x 670 -y 560 -defaultsOSRD
+preplace inst decryption_layer -pg 1 -lvl 3 -x 1960 -y 578 -defaultsOSRD
+preplace inst output_layer -pg 1 -lvl 3 -x 1960 -y 768 -defaultsOSRD
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 2 1000 690 1530
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 2 980 660 1480
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 2 990 670 1510
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 1 2 970 700 1520
+preplace netloc axi_uartlite_0_interrupt 1 1 2 1020 -160 1480
 preplace netloc clk_wiz_locked 1 0 2 -50 -50 860
-preplace netloc data_in_1 1 1 2 1040 700 1510
-preplace netloc enable_0_1 1 0 2 NJ 790 980J
-preplace netloc encrypted_data_out 1 2 2 1620 230 2120
-preplace netloc encryption_block_encrypted_valid_out 1 2 2 1590 60 2130
-preplace netloc microblaze_0_Clk 1 0 3 -10 -30 910 720 1550
-preplace netloc reception_layer_received_data_0 1 3 1 2170 490n
-preplace netloc reception_layer_received_valid_0 1 3 1 2130 510n
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 -20 -40 960 710 1560
-preplace netloc scrambler_block_data_out_0 1 2 1 1570 160n
-preplace netloc scrambler_block_valid_out_0 1 2 1 1580 180n
-preplace netloc transmission_layer_tx_data_out 1 2 2 1600 240 2130
-preplace netloc transmission_layer_tx_valid_out 1 2 2 1610 250 2120
-preplace netloc valid_in 1 0 2 NJ 770 970J
-preplace netloc In5_1 1 1 2 1010 810 1490
-preplace netloc interrupt_layer_irq 1 0 3 -30 800 NJ 800 1500
-preplace netloc reset_0_1 1 0 1 NJ 340
+preplace netloc data_in_1 1 1 2 1010 680 1490
+preplace netloc enable_0_1 1 0 2 -50J 450 920J
+preplace netloc encrypted_data_out 1 2 2 1610 -72 2170
+preplace netloc encryption_block_encrypted_valid_out 1 2 2 1620 -52 2160
+preplace netloc microblaze_0_Clk 1 0 3 0 -40 940 720 1570
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 -10 -30 900 730 1580
+preplace netloc scrambler_block_data_out_0 1 2 1 1550 78n
+preplace netloc scrambler_block_valid_out_0 1 2 1 1560 98n
+preplace netloc transmission_layer_tx_data_out 1 2 2 1630 178 2170
+preplace netloc transmission_layer_tx_valid_out 1 2 2 1640 188 2160
+preplace netloc valid_in 1 0 2 -40J 460 910J
+preplace netloc In5_1 1 1 2 1020 650 1470
+preplace netloc interrupt_layer_irq 1 0 3 -20 710 NJ 710 1500
+preplace netloc reset_0_1 1 0 1 -30J 340n
 preplace netloc Reset_2 1 0 2 -40 -70 880
-preplace netloc cpu_layer_Debug_SYS_Rst 1 0 2 -10 260 850
+preplace netloc cpu_layer_Debug_SYS_Rst 1 0 2 0 260 850
 preplace netloc SYS_Rst_1 1 0 2 -60 -60 870
-preplace netloc sys_clock_1 1 0 1 -60J 380n
-preplace netloc reset_1 1 0 1 NJ 400
-preplace netloc axi_ethernetlite_0_MDIO 1 2 2 NJ -60 2170
-preplace netloc axi_ethernetlite_0_MII 1 2 2 NJ -80 2180
-preplace netloc axi_gpio_0_GPIO 1 2 2 NJ 0 2150
-preplace netloc axi_iic_0_IIC 1 2 2 NJ -100 2190
-preplace netloc axi_quad_spi_0_SPI_0 1 2 2 NJ -40 N
-preplace netloc axi_uartlite_0_UART 1 2 2 NJ -20 2160
-preplace netloc input_layer_dip_switches_16bits_0 1 2 2 NJ 20 2140
-preplace netloc s_axi_1 1 1 1 1000 30n
-preplace netloc S00_AXI_1 1 1 1 950 50n
-preplace netloc S_AXI_INTR_1 1 1 1 890 70n
-preplace netloc S_AXI_2 1 1 1 900 -50n
-preplace netloc S_AXI1_1 1 1 1 920 -30n
-preplace netloc AXI_LITE_1 1 1 1 930 -10n
-preplace netloc S_AXI2_1 1 1 1 940 10n
-preplace netloc S_AXI3_1 1 1 1 1030 30n
-preplace netloc S_AXI4_1 1 1 1 1050 50n
-levelinfo -pg 1 -80 670 1300 1920 2210
-pagesize -pg 1 -db -bbox -sgen -200 -160 2460 1280
+preplace netloc sys_clock_1 1 0 1 NJ 570
+preplace netloc reset_1 1 0 1 -60J 400n
+preplace netloc reception_layer_received_data_0 1 2 2 1590 158 2220
+preplace netloc reception_layer_received_valid_0 1 2 2 1600 168 2190
+preplace netloc decryption_layer_decrypted_out_0 1 2 2 1640 658 2170
+preplace netloc decryption_layer_valid_out_0 1 2 2 1640 868 2160
+preplace netloc start_frame_0_1 1 0 3 NJ 830 NJ 830 1620J
+preplace netloc cmd_id_0_1 1 0 3 NJ 852 NJ 852 1630J
+preplace netloc output_layer_tx_line_0 1 3 1 2210 758n
+preplace netloc output_layer_tx_busy_0 1 3 1 2180 778n
+preplace netloc axi_ethernetlite_0_MDIO 1 2 2 1510J -62 2210
+preplace netloc axi_ethernetlite_0_MII 1 2 2 1510J -82 2220
+preplace netloc axi_gpio_0_GPIO 1 2 2 1520J -32 2190
+preplace netloc axi_iic_0_IIC 1 2 2 NJ -100 2230
+preplace netloc axi_quad_spi_0_SPI_0 1 2 2 1510J -42 2200
+preplace netloc axi_uartlite_0_UART 1 2 2 1580J -22 2180
+preplace netloc input_layer_dip_switches_16bits_0 1 2 2 1540J 148 2210
+preplace netloc s_axi_1 1 1 1 980 30n
+preplace netloc S00_AXI_1 1 1 1 960 50n
+preplace netloc S_AXI_INTR_1 1 1 1 930 70n
+preplace netloc S_AXI_2 1 1 1 890 -50n
+preplace netloc S_AXI1_1 1 1 1 910 -30n
+preplace netloc AXI_LITE_1 1 1 1 920 -10n
+preplace netloc S_AXI2_1 1 1 1 950 10n
+preplace netloc S_AXI3_1 1 1 1 1000 30n
+preplace netloc S_AXI4_1 1 1 1 1010 50n
+levelinfo -pg 1 -80 670 1300 1960 2250
+pagesize -pg 1 -db -bbox -sgen -240 -170 2500 1280
 "
 }
 {
    "da_axi4_cnt":"22",
    "da_board_cnt":"11",
-   "da_clkrst_cnt":"10",
+   "da_clkrst_cnt":"12",
    "da_mb_cnt":"1"
 }

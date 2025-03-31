@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1743143039">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1743365116">
   <File Type="VDS-TIMING-PB" Name="GPIO_demo_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="GPIO_demo_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="GPIO_demo.dcp"/>
-  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
-  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
-  <File Type="RDS-RDS" Name="GPIO_demo.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="GPIO_demo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="GPIO_demo_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="GPIO_demo_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="GPIO_demo.vds"/>
+  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
+  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Nexys-4-DDR-GPIO/src/hdl/RGB_controller.vhd">
@@ -65,6 +65,48 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/encryption_logic.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_transmission.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_reception.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_decryption.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/output_data_layer.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx_with_parity.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_frame_encoder.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

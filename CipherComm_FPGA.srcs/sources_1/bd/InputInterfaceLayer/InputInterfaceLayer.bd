@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC78607956F160CC7",
+      "boundary_crc": "0x848955A3D93D82D9",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../CipherComm_FPGA.gen/sources_1/bd/InputInterfaceLayer",
       "name": "InputInterfaceLayer",
@@ -71,6 +71,12 @@
         "rst_clk_wiz_100M": "",
         "clk_wiz": "",
         "reset_inv_0": ""
+      },
+      "decryption_layer": {
+        "data_decryption_0": ""
+      },
+      "output_layer": {
+        "output_data_layer_0": ""
       }
     },
     "interface_ports": {
@@ -181,12 +187,18 @@
       "valid_in": {
         "direction": "I"
       },
-      "received_data_0": {
-        "direction": "O",
+      "start_frame_0": {
+        "direction": "I"
+      },
+      "cmd_id_0": {
+        "direction": "I",
         "left": "7",
         "right": "0"
       },
-      "received_valid_0": {
+      "UART_TXD": {
+        "direction": "O"
+      },
+      "tx_busy_0": {
         "direction": "O"
       }
     },
@@ -3222,6 +3234,252 @@
             ]
           }
         }
+      },
+      "decryption_layer": {
+        "ports": {
+          "encrypted_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_in": {
+            "direction": "I"
+          },
+          "decrypted_out_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_out_0": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "data_decryption_0": {
+            "vlnv": "xilinx.com:module_ref:data_decryption:1.0",
+            "xci_name": "InputInterfaceLayer_data_decryption_0_0",
+            "xci_path": "ip/InputInterfaceLayer_data_decryption_0_0/InputInterfaceLayer_data_decryption_0_0.xci",
+            "inst_hier_path": "decryption_layer/data_decryption_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "data_decryption",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "reset",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "reset": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "encrypted_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_in": {
+                "direction": "I"
+              },
+              "decrypted_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_out": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "data_decryption_0/clk"
+            ]
+          },
+          "data_decryption_0_decrypted_out": {
+            "ports": [
+              "data_decryption_0/decrypted_out",
+              "decrypted_out_0"
+            ]
+          },
+          "data_decryption_0_valid_out": {
+            "ports": [
+              "data_decryption_0/valid_out",
+              "valid_out_0"
+            ]
+          },
+          "encrypted_in_1": {
+            "ports": [
+              "encrypted_in",
+              "data_decryption_0/encrypted_in"
+            ]
+          },
+          "reset_1": {
+            "ports": [
+              "reset",
+              "data_decryption_0/reset"
+            ]
+          },
+          "valid_in_1": {
+            "ports": [
+              "valid_in",
+              "data_decryption_0/valid_in"
+            ]
+          }
+        }
+      },
+      "output_layer": {
+        "ports": {
+          "decrypted_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_in": {
+            "direction": "I"
+          },
+          "start_frame_0": {
+            "direction": "I"
+          },
+          "cmd_id_0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "tx_line_0": {
+            "direction": "O"
+          },
+          "tx_busy_0": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "output_data_layer_0": {
+            "vlnv": "xilinx.com:module_ref:output_data_layer:1.0",
+            "xci_name": "InputInterfaceLayer_output_data_layer_0_0",
+            "xci_path": "ip/InputInterfaceLayer_output_data_layer_0_0/InputInterfaceLayer_output_data_layer_0_0.xci",
+            "inst_hier_path": "output_layer/output_data_layer_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "output_data_layer",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "rst",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "rst": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "decrypted_data": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_in": {
+                "direction": "I"
+              },
+              "start_frame": {
+                "direction": "I"
+              },
+              "cmd_id": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "tx_line": {
+                "direction": "O"
+              },
+              "tx_busy": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "output_data_layer_0/clk"
+            ]
+          },
+          "cmd_id_0_1": {
+            "ports": [
+              "cmd_id_0",
+              "output_data_layer_0/cmd_id"
+            ]
+          },
+          "decrypted_data_1": {
+            "ports": [
+              "decrypted_data",
+              "output_data_layer_0/decrypted_data"
+            ]
+          },
+          "output_data_layer_0_tx_busy": {
+            "ports": [
+              "output_data_layer_0/tx_busy",
+              "tx_busy_0"
+            ]
+          },
+          "output_data_layer_0_tx_line": {
+            "ports": [
+              "output_data_layer_0/tx_line",
+              "tx_line_0"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "output_data_layer_0/rst"
+            ]
+          },
+          "start_frame_0_1": {
+            "ports": [
+              "start_frame_0",
+              "output_data_layer_0/start_frame"
+            ]
+          },
+          "valid_in_1": {
+            "ports": [
+              "valid_in",
+              "output_data_layer_0/valid_in"
+            ]
+          }
+        }
       }
     },
     "interface_nets": {
@@ -3377,6 +3635,12 @@
           "cpu_layer/M00_ARESETN"
         ]
       },
+      "cmd_id_0_1": {
+        "ports": [
+          "cmd_id_0",
+          "output_layer/cmd_id_0"
+        ]
+      },
       "cpu_layer_Debug_SYS_Rst": {
         "ports": [
           "cpu_layer/Debug_SYS_Rst",
@@ -3387,6 +3651,18 @@
         "ports": [
           "input_layer/gpio_io_o",
           "scrambler_block/data_in"
+        ]
+      },
+      "decryption_layer_decrypted_out_0": {
+        "ports": [
+          "decryption_layer/decrypted_out_0",
+          "output_layer/decrypted_data"
+        ]
+      },
+      "decryption_layer_valid_out_0": {
+        "ports": [
+          "decryption_layer/valid_out_0",
+          "output_layer/valid_in"
         ]
       },
       "enable_0_1": {
@@ -3422,19 +3698,33 @@
           "scrambler_block/clk",
           "transmission_layer/clk",
           "reception_layer/clk",
-          "cpu_layer/Clk"
+          "cpu_layer/Clk",
+          "decryption_layer/clk",
+          "output_layer/clk"
+        ]
+      },
+      "output_layer_tx_busy_0": {
+        "ports": [
+          "output_layer/tx_busy_0",
+          "tx_busy_0"
+        ]
+      },
+      "output_layer_tx_line_0": {
+        "ports": [
+          "output_layer/tx_line_0",
+          "UART_TXD"
         ]
       },
       "reception_layer_received_data_0": {
         "ports": [
           "reception_layer/received_data_0",
-          "received_data_0"
+          "decryption_layer/encrypted_in"
         ]
       },
       "reception_layer_received_valid_0": {
         "ports": [
           "reception_layer/received_valid_0",
-          "received_valid_0"
+          "decryption_layer/valid_in"
         ]
       },
       "reset_0_1": {
@@ -3458,7 +3748,9 @@
           "scrambler_block/rst",
           "transmission_layer/rst",
           "reception_layer/rst",
-          "cpu_layer/S00_ARESETN"
+          "cpu_layer/S00_ARESETN",
+          "decryption_layer/reset",
+          "output_layer/rst"
         ]
       },
       "scrambler_block_data_out_0": {
@@ -3471,6 +3763,12 @@
         "ports": [
           "scrambler_block/valid_out",
           "encryption_block/scrambled_valid_in"
+        ]
+      },
+      "start_frame_0_1": {
+        "ports": [
+          "start_frame_0",
+          "output_layer/start_frame_0"
         ]
       },
       "sys_clock_1": {

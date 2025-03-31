@@ -165,3 +165,7 @@ set_property src_info {type:XDC file:1 line:270 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN V11 [get_ports {gpio_io_o[15]}] ; # חיבור GPIO ל-LED 15
 set_property src_info {type:XDC file:1 line:271 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {gpio_io_o[*]}]
+set_property src_info {type:XDC file:1 line:276 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN D4 IOSTANDARD LVCMOS33 } [get_ports { UART_TXD }]; # UART_TX to PC
+set_property src_info {type:XDC file:1 line:279 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H17 IOSTANDARD LVCMOS33 } [get_ports { tx_busy_0 }]; # LED indicator for TX Busy
