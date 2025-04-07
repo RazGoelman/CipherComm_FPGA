@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Apr  1 22:05:38 2025
+# Process ID: 251724
+# Current directory: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.tmp/scrambler_axi_v1_0_project/scrambler_axi_v1_0_project.runs/synth_1
+# Command line: vivado -log scrambler_axi_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source scrambler_axi_v1_0.tcl
+# Log file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.tmp/scrambler_axi_v1_0_project/scrambler_axi_v1_0_project.runs/synth_1/scrambler_axi_v1_0.vds
+# Journal file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.tmp/scrambler_axi_v1_0_project/scrambler_axi_v1_0_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source scrambler_axi_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top scrambler_axi_v1_0 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 251777
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2609.887 ; gain = 0.000 ; free physical = 2823 ; free virtual = 6006
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port rst is neither a static name nor a globally static expression [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'scrambler_axi_v1_0' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:72]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'scrambler_axi_v1_0_S00_AXI' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S00_AXI.vhd:5' bound to instance 'scrambler_axi_v1_0_S00_AXI_inst' of component 'scrambler_axi_v1_0_S00_AXI' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'scrambler_axi_v1_0_S00_AXI' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S00_AXI.vhd:224]
+INFO: [Synth 8-226] default block is never used [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S00_AXI.vhd:354]
+INFO: [Synth 8-256] done synthesizing module 'scrambler_axi_v1_0_S00_AXI' (1#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'scrambler_axi_v1_0_S_AXI_INTR' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S_AXI_INTR.vhd:5' bound to instance 'scrambler_axi_v1_0_S_AXI_INTR_inst' of component 'scrambler_axi_v1_0_S_AXI_INTR' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'scrambler_axi_v1_0_S_AXI_INTR' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S_AXI_INTR.vhd:98]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'scrambler_axi_v1_0_S_AXI_INTR' (2#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0_S_AXI_INTR.vhd:98]
+INFO: [Synth 8-637] synthesizing blackbox instance 'scrambler_logic_inst' of component 'scrambler_logic' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'scrambler_axi_v1_0' (3#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0/hdl/scrambler_axi_v1_0.vhd:72]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2609.887 ; gain = 0.000 ; free physical = 2124 ; free virtual = 5308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2609.887 ; gain = 0.000 ; free physical = 2053 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2053 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2032 ; free virtual = 5215
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2545 ; free virtual = 5728
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2545 ; free virtual = 5728
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2545 ; free virtual = 5728
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance scrambler_logic_inst of module scrambler_logic_bbox_0 having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     3|
+|3     |LUT2 |     7|
+|4     |LUT3 |     6|
+|5     |LUT4 |    28|
+|6     |LUT5 |     1|
+|7     |LUT6 |    40|
+|8     |FDRE |   187|
+|9     |FDSE |    11|
+|10    |IBUF |    61|
+|11    |OBUF |    83|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------+------------------------------+------+
+|      |Instance                             |Module                        |Cells |
++------+-------------------------------------+------------------------------+------+
+|1     |top                                  |                              |   429|
+|2     |  scrambler_axi_v1_0_S00_AXI_inst    |scrambler_axi_v1_0_S00_AXI    |   227|
+|3     |  scrambler_axi_v1_0_S_AXI_INTR_inst |scrambler_axi_v1_0_S_AXI_INTR |    56|
++------+-------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2664 ; free virtual = 5847
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.797 ; gain = 7.910 ; free physical = 2662 ; free virtual = 5846
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.805 ; gain = 7.910 ; free physical = 2662 ; free virtual = 5846
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2617.805 ; gain = 0.000 ; free physical = 2692 ; free virtual = 5876
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2673.824 ; gain = 0.000 ; free physical = 2623 ; free virtual = 5807
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1a41bb62
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2673.824 ; gain = 64.031 ; free physical = 2695 ; free virtual = 5878
+INFO: [Common 17-1381] The checkpoint '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.tmp/scrambler_axi_v1_0_project/scrambler_axi_v1_0_project.runs/synth_1/scrambler_axi_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file scrambler_axi_v1_0_utilization_synth.rpt -pb scrambler_axi_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 22:06:10 2025...

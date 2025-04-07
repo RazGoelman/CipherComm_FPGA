@@ -1,14 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC78607956F160CC7",
+      "boundary_crc": "0x67F450CEB422A7B3",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../CipherComm_FPGA.gen/sources_1/bd/InputInterfaceLayer",
       "name": "InputInterfaceLayer",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1",
-      "validated": "true"
+      "tool_version": "2021.1"
     },
     "design_tree": {
       "input_layer": {
@@ -24,8 +23,8 @@
         "xlconcat_0": ""
       },
       "scrambler_block": {
-        "scrambler_0": "",
-        "scrambler_axi_0": ""
+        "scrambler_axi_0": "",
+        "scrambler_0": ""
       },
       "encryption_block": {
         "encryption_layer_0": ""
@@ -71,19 +70,22 @@
         "rst_clk_wiz_100M": "",
         "clk_wiz": "",
         "reset_inv_0": ""
+      },
+      "decryption_layer": {
+        "decryption_logic_0": ""
+      },
+      "unscrambler_layer": {
+        "unscrambler_layer_0": ""
+      },
+      "decoding_layer_0": {
+        "decoding_layer_1": ""
       }
     },
     "interface_ports": {
       "mdio_rtl": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:mdio:1.0",
-        "vlnv": "xilinx.com:interface:mdio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:interface:mdio_rtl:1.0"
       },
       "mii_rtl": {
         "mode": "Master",
@@ -121,20 +123,8 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "InputInterfaceLayer_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -145,10 +135,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -158,10 +144,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -181,13 +163,24 @@
       "valid_in": {
         "direction": "I"
       },
-      "received_data_0": {
+      "data_out_0": {
         "direction": "O",
         "left": "7",
         "right": "0"
       },
-      "received_valid_0": {
+      "valid_out_0": {
         "direction": "O"
+      },
+      "error_detected_0": {
+        "direction": "O"
+      },
+      "error_detected_1": {
+        "direction": "O"
+      },
+      "sseg_out_0": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
       }
     },
     "components": {
@@ -699,9 +692,28 @@
           "irq": {
             "type": "intr",
             "direction": "O"
+          },
+          "lfsr_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "parity_out": {
+            "direction": "O"
+          },
+          "crc_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
           }
         },
         "components": {
+          "scrambler_axi_0": {
+            "vlnv": "user.org:user:scrambler_axi:1.0",
+            "xci_name": "InputInterfaceLayer_scrambler_axi_0_0",
+            "xci_path": "ip/InputInterfaceLayer_scrambler_axi_0_0/InputInterfaceLayer_scrambler_axi_0_0.xci",
+            "inst_hier_path": "scrambler_block/scrambler_axi_0"
+          },
           "scrambler_0": {
             "vlnv": "xilinx.com:module_ref:scrambler:1.0",
             "xci_name": "InputInterfaceLayer_scrambler_0_0",
@@ -745,14 +757,21 @@
               },
               "valid_out": {
                 "direction": "O"
+              },
+              "lfsr_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "parity_out": {
+                "direction": "O"
+              },
+              "crc_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
               }
             }
-          },
-          "scrambler_axi_0": {
-            "vlnv": "user.org:user:scrambler_axi:1.0",
-            "xci_name": "InputInterfaceLayer_scrambler_axi_0_0",
-            "xci_path": "ip/InputInterfaceLayer_scrambler_axi_0_0/InputInterfaceLayer_scrambler_axi_0_0.xci",
-            "inst_hier_path": "scrambler_block/scrambler_axi_0"
           }
         },
         "interface_nets": {
@@ -773,9 +792,9 @@
           "clk_1": {
             "ports": [
               "clk",
-              "scrambler_0/clk",
               "scrambler_axi_0/s00_axi_aclk",
-              "scrambler_axi_0/s_axi_intr_aclk"
+              "scrambler_axi_0/s_axi_intr_aclk",
+              "scrambler_0/clk"
             ]
           },
           "data_in_1": {
@@ -793,15 +812,33 @@
           "rst_1": {
             "ports": [
               "rst",
-              "scrambler_0/rst",
               "scrambler_axi_0/s00_axi_aresetn",
-              "scrambler_axi_0/s_axi_intr_aresetn"
+              "scrambler_axi_0/s_axi_intr_aresetn",
+              "scrambler_0/rst"
+            ]
+          },
+          "scrambler_0_crc_out": {
+            "ports": [
+              "scrambler_0/crc_out",
+              "crc_out"
             ]
           },
           "scrambler_0_data_out": {
             "ports": [
               "scrambler_0/data_out",
               "data_out"
+            ]
+          },
+          "scrambler_0_lfsr_out": {
+            "ports": [
+              "scrambler_0/lfsr_out",
+              "lfsr_out"
+            ]
+          },
+          "scrambler_0_parity_out": {
+            "ports": [
+              "scrambler_0/parity_out",
+              "parity_out"
             ]
           },
           "scrambler_0_valid_out": {
@@ -3222,6 +3259,411 @@
             ]
           }
         }
+      },
+      "decryption_layer": {
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_in": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "valid_out": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        },
+        "components": {
+          "decryption_logic_0": {
+            "vlnv": "xilinx.com:module_ref:decryption_logic:1.0",
+            "xci_name": "InputInterfaceLayer_decryption_logic_0_0",
+            "xci_path": "ip/InputInterfaceLayer_decryption_logic_0_0/InputInterfaceLayer_decryption_logic_0_0.xci",
+            "inst_hier_path": "decryption_layer/decryption_logic_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "decryption_logic",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "reset",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "reset": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "data_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_in": {
+                "direction": "I"
+              },
+              "data_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_out": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "decryption_logic_0/clk"
+            ]
+          },
+          "data_in_1": {
+            "ports": [
+              "data_in",
+              "decryption_logic_0/data_in"
+            ]
+          },
+          "decryption_logic_0_data_out": {
+            "ports": [
+              "decryption_logic_0/data_out",
+              "data_out"
+            ]
+          },
+          "decryption_logic_0_valid_out": {
+            "ports": [
+              "decryption_logic_0/valid_out",
+              "valid_out"
+            ]
+          },
+          "reset_1": {
+            "ports": [
+              "reset",
+              "decryption_logic_0/reset"
+            ]
+          },
+          "valid_in_1": {
+            "ports": [
+              "valid_in",
+              "decryption_logic_0/valid_in"
+            ]
+          }
+        }
+      },
+      "unscrambler_layer": {
+        "ports": {
+          "valid_in": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "valid_out": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "lfsr_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        },
+        "components": {
+          "unscrambler_layer_0": {
+            "vlnv": "xilinx.com:module_ref:unscrambler_layer:1.0",
+            "xci_name": "InputInterfaceLayer_unscrambler_layer_0_0",
+            "xci_path": "ip/InputInterfaceLayer_unscrambler_layer_0_0/InputInterfaceLayer_unscrambler_layer_0_0.xci",
+            "inst_hier_path": "unscrambler_layer/unscrambler_layer_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "unscrambler_layer",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "rst",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "rst": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "data_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_in": {
+                "direction": "I"
+              },
+              "lfsr_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "data_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_out": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "unscrambler_layer_0/clk"
+            ]
+          },
+          "data_in_1": {
+            "ports": [
+              "data_in",
+              "unscrambler_layer_0/data_in"
+            ]
+          },
+          "lfsr_in_1": {
+            "ports": [
+              "lfsr_in",
+              "unscrambler_layer_0/lfsr_in"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "unscrambler_layer_0/rst"
+            ]
+          },
+          "unscrambler_layer_0_data_out": {
+            "ports": [
+              "unscrambler_layer_0/data_out",
+              "data_out"
+            ]
+          },
+          "unscrambler_layer_0_valid_out": {
+            "ports": [
+              "unscrambler_layer_0/valid_out",
+              "valid_out"
+            ]
+          },
+          "valid_in_1": {
+            "ports": [
+              "valid_in",
+              "unscrambler_layer_0/valid_in"
+            ]
+          }
+        }
+      },
+      "decoding_layer_0": {
+        "ports": {
+          "valid_in": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "parity_in": {
+            "direction": "I"
+          },
+          "crc_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "data_out_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_out_0": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "error_detected_1": {
+            "direction": "O"
+          },
+          "sseg_out_0": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        },
+        "components": {
+          "decoding_layer_1": {
+            "vlnv": "xilinx.com:module_ref:decoding_layer:1.0",
+            "xci_name": "InputInterfaceLayer_decoding_layer_1_0",
+            "xci_path": "ip/InputInterfaceLayer_decoding_layer_1_0/InputInterfaceLayer_decoding_layer_1_0.xci",
+            "inst_hier_path": "decoding_layer_0/decoding_layer_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "decoding_layer",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "rst",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "rst": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "data_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_in": {
+                "direction": "I"
+              },
+              "crc_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "parity_in": {
+                "direction": "I"
+              },
+              "data_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "valid_out": {
+                "direction": "O"
+              },
+              "error_detected": {
+                "direction": "O"
+              },
+              "sseg_out": {
+                "direction": "O",
+                "left": "6",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "decoding_layer_1/clk"
+            ]
+          },
+          "crc_in_1": {
+            "ports": [
+              "crc_in",
+              "decoding_layer_1/crc_in"
+            ]
+          },
+          "data_in_1": {
+            "ports": [
+              "data_in",
+              "decoding_layer_1/data_in"
+            ]
+          },
+          "decoding_layer_1_data_out": {
+            "ports": [
+              "decoding_layer_1/data_out",
+              "data_out_0"
+            ]
+          },
+          "decoding_layer_1_error_detected": {
+            "ports": [
+              "decoding_layer_1/error_detected",
+              "error_detected_1"
+            ]
+          },
+          "decoding_layer_1_sseg_out": {
+            "ports": [
+              "decoding_layer_1/sseg_out",
+              "sseg_out_0"
+            ]
+          },
+          "decoding_layer_1_valid_out": {
+            "ports": [
+              "decoding_layer_1/valid_out",
+              "valid_out_0"
+            ]
+          },
+          "parity_in_1": {
+            "ports": [
+              "parity_in",
+              "decoding_layer_1/parity_in"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "decoding_layer_1/rst"
+            ]
+          },
+          "valid_in_1": {
+            "ports": [
+              "valid_in",
+              "decoding_layer_1/valid_in"
+            ]
+          }
+        }
       }
     },
     "interface_nets": {
@@ -3389,6 +3831,42 @@
           "scrambler_block/data_in"
         ]
       },
+      "decoding_layer_0_data_out_0": {
+        "ports": [
+          "decoding_layer_0/data_out_0",
+          "data_out_0"
+        ]
+      },
+      "decoding_layer_0_error_detected_1": {
+        "ports": [
+          "decoding_layer_0/error_detected_1",
+          "error_detected_1"
+        ]
+      },
+      "decoding_layer_0_sseg_out_0": {
+        "ports": [
+          "decoding_layer_0/sseg_out_0",
+          "sseg_out_0"
+        ]
+      },
+      "decoding_layer_0_valid_out_0": {
+        "ports": [
+          "decoding_layer_0/valid_out_0",
+          "valid_out_0"
+        ]
+      },
+      "decryption_layer_data_out": {
+        "ports": [
+          "decryption_layer/data_out",
+          "unscrambler_layer/data_in"
+        ]
+      },
+      "decryption_layer_valid_out": {
+        "ports": [
+          "decryption_layer/valid_out",
+          "unscrambler_layer/valid_in"
+        ]
+      },
       "enable_0_1": {
         "ports": [
           "enable",
@@ -3422,19 +3900,22 @@
           "scrambler_block/clk",
           "transmission_layer/clk",
           "reception_layer/clk",
-          "cpu_layer/Clk"
+          "cpu_layer/Clk",
+          "decryption_layer/clk",
+          "unscrambler_layer/clk",
+          "decoding_layer_0/clk"
         ]
       },
       "reception_layer_received_data_0": {
         "ports": [
           "reception_layer/received_data_0",
-          "received_data_0"
+          "decryption_layer/data_in"
         ]
       },
       "reception_layer_received_valid_0": {
         "ports": [
           "reception_layer/received_valid_0",
-          "received_valid_0"
+          "decryption_layer/valid_in"
         ]
       },
       "reset_0_1": {
@@ -3458,13 +3939,34 @@
           "scrambler_block/rst",
           "transmission_layer/rst",
           "reception_layer/rst",
-          "cpu_layer/S00_ARESETN"
+          "cpu_layer/S00_ARESETN",
+          "decryption_layer/reset",
+          "unscrambler_layer/rst",
+          "decoding_layer_0/rst"
+        ]
+      },
+      "scrambler_block_crc_out": {
+        "ports": [
+          "scrambler_block/crc_out",
+          "decoding_layer_0/crc_in"
         ]
       },
       "scrambler_block_data_out_0": {
         "ports": [
           "scrambler_block/data_out",
           "encryption_block/scrambled_data_in"
+        ]
+      },
+      "scrambler_block_lfsr_out": {
+        "ports": [
+          "scrambler_block/lfsr_out",
+          "unscrambler_layer/lfsr_in"
+        ]
+      },
+      "scrambler_block_parity_out": {
+        "ports": [
+          "scrambler_block/parity_out",
+          "decoding_layer_0/parity_in"
         ]
       },
       "scrambler_block_valid_out_0": {
@@ -3489,6 +3991,18 @@
         "ports": [
           "transmission_layer/tx_valid_out",
           "reception_layer/rx_valid_in"
+        ]
+      },
+      "unscrambler_layer_data_out": {
+        "ports": [
+          "unscrambler_layer/data_out",
+          "decoding_layer_0/data_in"
+        ]
+      },
+      "unscrambler_layer_valid_out": {
+        "ports": [
+          "unscrambler_layer/valid_out",
+          "decoding_layer_0/valid_in"
         ]
       },
       "valid_in": {

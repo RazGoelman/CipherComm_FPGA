@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log GPIO_demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPIO_demo.tcl
+EAStep vivado -log decoding_layer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoding_layer.tcl

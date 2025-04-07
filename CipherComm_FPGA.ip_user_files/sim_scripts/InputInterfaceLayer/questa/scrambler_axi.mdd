@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER scrambler_axi
+	OPTION supported_peripherals = (scrambler_axi);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = scrambler_axi;
+END DRIVER

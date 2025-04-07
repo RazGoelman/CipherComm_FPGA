@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "../../../../CipherComm_FPGA.gen/sources_1/bd/InputInterfaceLayer/ipshared/ec67/hdl" --include "../../../../CipherComm_FPGA.gen/sources_1/bd/InputInterfaceLayer/ipshared/6dcf" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_xlconcat_0_0/sim/InputInterfaceLayer_xlconcat_0_0.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_fifo_generator_0_0/sim/InputInterfaceLayer_fifo_generator_0_0.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_xbar_0/sim/InputInterfaceLayer_xbar_0.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_lmb_bram_0/sim/InputInterfaceLayer_lmb_bram_0.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_xbar_2/sim/InputInterfaceLayer_xbar_2.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_clk_wiz_0/InputInterfaceLayer_clk_wiz_0_clk_wiz.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_clk_wiz_0/InputInterfaceLayer_clk_wiz_0.v" \
+"../../../bd/InputInterfaceLayer/ip/InputInterfaceLayer_reset_inv_0_0/sim/InputInterfaceLayer_reset_inv_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

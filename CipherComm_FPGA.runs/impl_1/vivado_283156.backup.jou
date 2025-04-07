@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Apr  2 00:07:27 2025
+# Process ID: 283156
+# Current directory: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1
+# Command line: vivado -log scrambler_logic.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source scrambler_logic.tcl -notrace
+# Log file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/scrambler_logic.vdi
+# Journal file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source scrambler_logic.tcl -notrace

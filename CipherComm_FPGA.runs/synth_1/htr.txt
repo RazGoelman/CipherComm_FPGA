@@ -6,4 +6,4 @@
 # Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log GPIO_demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPIO_demo.tcl
+vivado -log decoding_layer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoding_layer.tcl
