@@ -21,43 +21,41 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity decryption_logic is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           data_in : in STD_LOGIC_VECTOR (7 downto 0);
-           valid_in : in STD_LOGIC;
-           data_out : out STD_LOGIC_VECTOR (7 downto 0);
-           valid_out : out STD_LOGIC);
+    Port (
+        clk                  : in  std_logic;
+        rst                  : in  std_logic;
+        encrypted_data       : in  std_logic_vector(7 downto 0);
+        valid_in             : in  std_logic;
+        decrypted_data       : out std_logic_vector(7 downto 0);
+        valid_out            : out std_logic
+    );
 end decryption_logic;
 
 architecture Behavioral of decryption_logic is
-    constant XOR_KEY : STD_LOGIC_VECTOR(7 downto 0) := x"5A";
-
+    constant DECRYPTION_KEY : std_logic_vector(7 downto 0) := "10101010";  -- Example key
+    signal decrypted_reg    : std_logic_vector(7 downto 0) := (others => '0');
+    signal valid_reg        : std_logic := '0';
 begin
 
-process(clk, reset)
+    process(clk)
     begin
-        if reset = '1' then
-            data_out  <= (others => '0');
-            valid_out <= '0';
-        elsif rising_edge(clk) then
-            if valid_in = '1' then
-                data_out  <= data_in xor XOR_KEY;
-                valid_out <= '1';
+        if rising_edge(clk) then
+            if rst = '1' then
+                decrypted_reg <= (others => '0');
+                valid_reg     <= '0';
+            elsif valid_in = '1' then
+                decrypted_reg <= encrypted_data xor DECRYPTION_KEY;
+                valid_reg     <= '1';
             else
-                valid_out <= '0';
+                valid_reg     <= '0';
             end if;
         end if;
     end process;
+
+    decrypted_data <= decrypted_reg;
+    valid_out      <= valid_reg;
 
 end Behavioral;

@@ -18,18 +18,9 @@
 -- 
 ----------------------------------------------------------------------------------
 
---architecture
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity data_transmission is
   Port (
@@ -41,39 +32,49 @@ entity data_transmission is
     fifo_rd_en      : out std_logic;
     tx_data_out     : out std_logic_vector(7 downto 0);
     tx_valid_out    : out std_logic;
+    tx_crc_out      : out std_logic_vector(7 downto 0);  -- output CRC
+    crc_valid_out   : out std_logic;                     -- valid for CRC
     ready_for_data  : out std_logic
   );
 end data_transmission;
 
 architecture Behavioral of data_transmission is
-  signal rd_en_int : std_logic := '0';
+  signal rd_en_int     : std_logic := '0';
+  signal tx_crc_int    : std_logic_vector(7 downto 0) := (others => '0');
+  signal crc_valid_int : std_logic := '0';
 
 begin
 
-  -- Flow control feedback: allow upstream to write only when FIFO not full
   ready_for_data <= not fifo_full;
-  
--- Read process from FIFO to UART interface
+
   process(clk)
   begin
     if rising_edge(clk) then
       if rst = '1' then
-        rd_en_int     <= '0';
-        tx_data_out   <= (others => '0');
-        tx_valid_out  <= '0';
+        rd_en_int      <= '0';
+        tx_data_out    <= (others => '0');
+        tx_valid_out   <= '0';
+        tx_crc_int     <= (others => '0');
+        crc_valid_int  <= '0';
       else
-        if fifo_empty = '0' and fifo_dout(8) = '1' then
-          rd_en_int     <= '1';  -- Enable read
-          tx_data_out   <= fifo_dout(7 downto 0);
+        if fifo_empty = '0' and fifo_dout(17) = '1' then
+          rd_en_int     <= '1';
+          tx_data_out   <= fifo_dout(7 downto 0);       -- data
+          tx_crc_int    <= fifo_dout(15 downto 8);      -- CRC
           tx_valid_out  <= '1';
+          crc_valid_int <= '1';
         else
           rd_en_int     <= '0';
           tx_valid_out  <= '0';
+          crc_valid_int <= '0';
         end if;
       end if;
     end if;
   end process;
 
-  fifo_rd_en <= rd_en_int;
+  fifo_rd_en   <= rd_en_int;
+  tx_crc_out   <= tx_crc_int;
+  crc_valid_out <= crc_valid_int;
 
 end Behavioral;
+

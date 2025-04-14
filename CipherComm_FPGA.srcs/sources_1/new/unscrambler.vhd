@@ -21,18 +21,10 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity unscrambler is
-    Port ( 
+    Port (
         clk        : in  STD_LOGIC;
         rst        : in  STD_LOGIC;
         enable     : in  STD_LOGIC;
@@ -45,25 +37,21 @@ entity unscrambler is
 end unscrambler;
 
 architecture Behavioral of unscrambler is
-    signal descrambled : STD_LOGIC_VECTOR (7 downto 0);
-
+    signal unscrambled_data : std_logic_vector(7 downto 0);
 begin
-
-  process(clk, rst)
+    process(clk, rst)
     begin
         if rst = '1' then
-            descrambled <= (others => '0');
-            data_out    <= (others => '0');
-            valid_out   <= '0';
+            data_out  <= (others => '0');
+            valid_out <= '0';
         elsif rising_edge(clk) then
             if enable = '1' and valid_in = '1' then
-                descrambled <= data_in xor lfsr_in;
-                data_out    <= descrambled;
-                valid_out   <= '1';
+                unscrambled_data <= data_in xor lfsr_in;
+                data_out  <= unscrambled_data;
+                valid_out <= '1';
             else
-                valid_out   <= '0';
+                valid_out <= '0';
             end if;
         end if;
     end process;
-    
 end Behavioral;

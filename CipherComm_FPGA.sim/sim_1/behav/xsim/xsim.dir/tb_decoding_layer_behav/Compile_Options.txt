@@ -1,1 +1,0 @@
--wto "d3c2ade0781f47a3ae4dc4bae335a349" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "tb_decoding_layer_behav" "xil_defaultlib.tb_decoding_layer" -log "elaborate.log" 
