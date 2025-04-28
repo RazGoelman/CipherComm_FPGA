@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/12/2025 01:02:01 PM
--- Design Name: 
--- Module Name: output_display - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -44,6 +23,7 @@ begin
         elsif rising_edge(clk) then
             if valid_in = '1' then
                 led_reg <= data_in;
+                report "[DEBUG] LED updated with value: " & integer'image(to_integer(unsigned(data_in))) severity note;
             end if;
         end if;
     end process;
@@ -51,4 +31,3 @@ begin
     leds_out <= led_reg;
 
 end Behavioral;
-

@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/05/2025 11:42:52 AM
--- Design Name: 
--- Module Name: unscrambler - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -37,21 +16,29 @@ entity unscrambler is
 end unscrambler;
 
 architecture Behavioral of unscrambler is
-    signal unscrambled_data : std_logic_vector(7 downto 0);
+    signal data_reg  : std_logic_vector(7 downto 0) := (others => '0');
+    signal valid_reg : std_logic := '0';
 begin
-    process(clk, rst)
+
+    process(clk)
     begin
-        if rst = '1' then
-            data_out  <= (others => '0');
-            valid_out <= '0';
-        elsif rising_edge(clk) then
-            if enable = '1' and valid_in = '1' then
-                unscrambled_data <= data_in xor lfsr_in;
-                data_out  <= unscrambled_data;
-                valid_out <= '1';
+        if rising_edge(clk) then
+            if rst = '1' then
+                data_reg  <= (others => '0');
+                valid_reg <= '0';
+            elsif enable = '1' and valid_in = '1' then
+                data_reg  <= data_in xor lfsr_in;
+                valid_reg <= '1';
+                report "[DEBUG] UnScrambler: data_in = " & integer'image(to_integer(unsigned(data_in))) &
+                       ", lfsr_in = " & integer'image(to_integer(unsigned(lfsr_in))) &
+                       ", data_out = " & integer'image(to_integer(unsigned(data_in xor lfsr_in))) severity note;
             else
-                valid_out <= '0';
+                valid_reg <= '0';
             end if;
         end if;
     end process;
+
+    data_out  <= data_reg;
+    valid_out <= valid_reg;
+
 end Behavioral;

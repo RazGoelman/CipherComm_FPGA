@@ -1,0 +1,704 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Apr 20 01:26:29 2025
+# Process ID: 821351
+# Current directory: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1
+# Command line: vivado -log top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
+# Log file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/top_level.vdi
+# Journal file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/ip_repo/scrambler_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: link_design -top top_level -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'u_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2611.891 ; gain = 0.000 ; free physical = 2433 ; free virtual = 6464
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_fifo/U0'
+Finished Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_fifo/U0'
+Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_CT'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'micClk'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'micData'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'micLRSel'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ampPWM'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:233]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:233]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ampSD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:234]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD_IN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_CTS'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_RTS'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:242]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:242]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSPI_CSN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:275]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:275]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:277]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:278]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:278]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:282]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:282]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[8]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[9]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[10]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[11]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[12]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:287]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:287]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[13]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[14]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[15]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:290]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:290]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[*]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:291]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:294]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tx_busy_0'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:297]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:297]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enable'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:305]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:305]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enable'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'valid_in'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'valid_in'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'valid_out'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:314]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:314]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'valid_out'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:318]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:318]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:319]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:319]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:320]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:320]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:321]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:321]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:322]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:322]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
+Finished Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2667.824 ; gain = 0.000 ; free physical = 2330 ; free virtual = 6360
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+
+13 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2731.855 ; gain = 64.031 ; free physical = 2316 ; free virtual = 6347
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 691061b8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2864.637 ; gain = 132.781 ; free physical = 2027 ; free virtual = 6058
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 624204ad
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5908
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 624204ad
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5908
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 701b747d
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+INFO: [Opt 31-389] Phase Sweep created 63 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Sweep, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 701b747d
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 701b747d
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 72970301
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              2  |
+|  Constant propagation         |               0  |               0  |                                              2  |
+|  Sweep                        |              63  |               1  |                                             10  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              2  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+Ending Logic Optimization Task | Checksum: 9ad7ebde
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3040.637 ; gain = 0.000 ; free physical = 1876 ; free virtual = 5909
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 9ad7ebde
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1780 ; free virtual = 5817
+Ending Power Optimization Task | Checksum: 9ad7ebde
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3345.652 ; gain = 305.016 ; free physical = 1780 ; free virtual = 5818
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 9ad7ebde
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1780 ; free virtual = 5818
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1780 ; free virtual = 5818
+Ending Netlist Obfuscation Task | Checksum: 9ad7ebde
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1780 ; free virtual = 5818
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3345.652 ; gain = 677.828 ; free physical = 1780 ; free virtual = 5818
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1780 ; free virtual = 5817
+INFO: [Common 17-1381] The checkpoint '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/top_level_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_level_drc_opted.rpt -pb top_level_drc_opted.pb -rpx top_level_drc_opted.rpx
+Command: report_drc -file top_level_drc_opted.rpt -pb top_level_drc_opted.pb -rpx top_level_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/impl_1/top_level_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ENARDEN (net: u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (u_bridge/fifo_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/WEA[0] (net: u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (u_bridge/fifo_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/WEA[1] (net: u_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (u_bridge/fifo_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1709 ; free virtual = 5750
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6fdf2ba8
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1709 ; free virtual = 5750
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1709 ; free virtual = 5750
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (69) is greater than number of available sites (60).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 60 sites available on device, but needs 69 sites.
+	Term: fifo_din_ext[0]
+	Term: fifo_din_ext[1]
+	Term: fifo_din_ext[2]
+	Term: fifo_din_ext[3]
+	Term: fifo_din_ext[4]
+	Term: fifo_din_ext[5]
+	Term: fifo_din_ext[6]
+	Term: fifo_din_ext[7]
+	Term: fifo_din_ext[8]
+	Term: fifo_din_ext[9]
+	Term: fifo_din_ext[10]
+	Term: fifo_din_ext[11]
+	Term: fifo_din_ext[12]
+	Term: fifo_din_ext[13]
+	Term: fifo_din_ext[14]
+	Term: fifo_din_ext[15]
+	Term: fifo_din_ext[16]
+	Term: fifo_din_ext[17]
+	Term: data_encoded_ext[0]
+	Term: data_encoded_ext[1]
+	Term: data_encoded_ext[2]
+	Term: data_encoded_ext[3]
+	Term: data_encoded_ext[4]
+	Term: data_encoded_ext[5]
+	Term: data_encoded_ext[6]
+	Term: data_encoded_ext[7]
+	Term: decoded_data_dbg[0]
+	Term: decoded_data_dbg[1]
+	Term: decoded_data_dbg[2]
+	Term: decoded_data_dbg[3]
+	Term: decoded_data_dbg[4]
+	Term: decoded_data_dbg[5]
+	Term: decoded_data_dbg[6]
+	Term: decoded_data_dbg[7]
+	Term: sensor_data_out_ext[0]
+	Term: sensor_data_out_ext[1]
+	Term: sensor_data_out_ext[2]
+	Term: sensor_data_out_ext[3]
+	Term: sensor_data_out_ext[4]
+	Term: sensor_data_out_ext[5]
+	Term: sensor_data_out_ext[6]
+	Term: sensor_data_out_ext[7]
+	Term: to_decryption_dbg[0]
+	Term: to_decryption_dbg[1]
+	Term: to_decryption_dbg[2]
+	Term: to_decryption_dbg[3]
+	Term: to_decryption_dbg[4]
+	Term: to_decryption_dbg[5]
+	Term: to_decryption_dbg[6]
+	Term: to_decryption_dbg[7]
+	Term: tx_data_out[0]
+	Term: tx_data_out[1]
+	Term: tx_data_out[2]
+	Term: tx_data_out[3]
+	Term: tx_data_out[4]
+	Term: tx_data_out[5]
+	Term: tx_data_out[6]
+	Term: tx_data_out[7]
+	Term: crc_error_dbg
+	Term: decoded_valid_dbg
+	Term: encoded_valid_ext
+	Term: error_led
+	Term: fifo_empty_ext
+	Term: fifo_full_ext
+	Term: fifo_rd_en_ext
+	Term: fifo_wr_en_ext
+	Term: sensor_valid_out_ext
+	Term: tx_valid_out
+	Term: valid_to_decryption_dbg
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (114) is greater than number of available sites (60).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 60 sites available on device, but needs 69 sites.
+	Term: fifo_din_ext[0]
+	Term: fifo_din_ext[1]
+	Term: fifo_din_ext[2]
+	Term: fifo_din_ext[3]
+	Term: fifo_din_ext[4]
+	Term: fifo_din_ext[5]
+	Term: fifo_din_ext[6]
+	Term: fifo_din_ext[7]
+	Term: fifo_din_ext[8]
+	Term: fifo_din_ext[9]
+	Term: fifo_din_ext[10]
+	Term: fifo_din_ext[11]
+	Term: fifo_din_ext[12]
+	Term: fifo_din_ext[13]
+	Term: fifo_din_ext[14]
+	Term: fifo_din_ext[15]
+	Term: fifo_din_ext[16]
+	Term: fifo_din_ext[17]
+	Term: data_encoded_ext[0]
+	Term: data_encoded_ext[1]
+	Term: data_encoded_ext[2]
+	Term: data_encoded_ext[3]
+	Term: data_encoded_ext[4]
+	Term: data_encoded_ext[5]
+	Term: data_encoded_ext[6]
+	Term: data_encoded_ext[7]
+	Term: decoded_data_dbg[0]
+	Term: decoded_data_dbg[1]
+	Term: decoded_data_dbg[2]
+	Term: decoded_data_dbg[3]
+	Term: decoded_data_dbg[4]
+	Term: decoded_data_dbg[5]
+	Term: decoded_data_dbg[6]
+	Term: decoded_data_dbg[7]
+	Term: sensor_data_out_ext[0]
+	Term: sensor_data_out_ext[1]
+	Term: sensor_data_out_ext[2]
+	Term: sensor_data_out_ext[3]
+	Term: sensor_data_out_ext[4]
+	Term: sensor_data_out_ext[5]
+	Term: sensor_data_out_ext[6]
+	Term: sensor_data_out_ext[7]
+	Term: to_decryption_dbg[0]
+	Term: to_decryption_dbg[1]
+	Term: to_decryption_dbg[2]
+	Term: to_decryption_dbg[3]
+	Term: to_decryption_dbg[4]
+	Term: to_decryption_dbg[5]
+	Term: to_decryption_dbg[6]
+	Term: to_decryption_dbg[7]
+	Term: tx_data_out[0]
+	Term: tx_data_out[1]
+	Term: tx_data_out[2]
+	Term: tx_data_out[3]
+	Term: tx_data_out[4]
+	Term: tx_data_out[5]
+	Term: tx_data_out[6]
+	Term: tx_data_out[7]
+	Term: crc_error_dbg
+	Term: decoded_valid_dbg
+	Term: encoded_valid_ext
+	Term: error_led
+	Term: fifo_empty_ext
+	Term: fifo_full_ext
+	Term: fifo_rd_en_ext
+	Term: fifo_wr_en_ext
+	Term: sensor_valid_out_ext
+	Term: tx_valid_out
+	Term: valid_to_decryption_dbg
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |     5 | LVCMOS33(5)                                                            |                                          |        |  +3.30 |    YES |     |
+| 15 |    50 |     4 | LVCMOS33(4)                                                            |                                          |        |  +3.30 |    YES |     |
+| 16 |    10 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     1 | LVCMOS33(1)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   210 |    10 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | leds_out[3]          | LVCMOS33        | IOB_X0Y84            | N14                  |                      |
+|        | leds_out[4]          | LVCMOS33        | IOB_X0Y86            | R18                  |                      |
+|        | leds_out[5]          | LVCMOS33        | IOB_X0Y63            | V17                  |                      |
+|        | leds_out[6]          | LVCMOS33        | IOB_X0Y66            | U17                  |                      |
+|        | leds_out[7]          | LVCMOS33        | IOB_X0Y64            | U16                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 15     | leds_out[0]          | LVCMOS33        | IOB_X0Y114           | H17                  |                      |
+|        | leds_out[1]          | LVCMOS33        | IOB_X0Y102           | K15                  |                      |
+|        | leds_out[2]          | LVCMOS33        | IOB_X0Y115           | J13                  |                      |
+|        | rst                  | LVCMOS33        | IOB_X0Y144           | C12                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | clk                  | LVCMOS33        | IOB_X1Y126           | E3                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a4f2e4ba
+
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1733 ; free virtual = 5751
+Phase 1 Placer Initialization | Checksum: a4f2e4ba
+
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1733 ; free virtual = 5751
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: a4f2e4ba
+
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3345.652 ; gain = 0.000 ; free physical = 1733 ; free virtual = 5751
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 103 Warnings, 100 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 20 01:26:52 2025...

@@ -1,59 +1,40 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/12/2025 10:41:46 AM
--- Design Name: 
--- Module Name: decoding - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity decoding is
     Port (
-        clk          : in  STD_LOGIC;                          -- System clock
-        rst          : in  STD_LOGIC;                          -- Asynchronous reset
-        valid_in     : in  STD_LOGIC;                          -- Valid signal for incoming data
-        data_in      : in  STD_LOGIC_VECTOR(7 downto 0);       -- Decoded input data (from unscrambler)
-        decoded_out  : out STD_LOGIC_VECTOR(7 downto 0);       -- Final decoded data output
-        valid_out    : out STD_LOGIC                           -- Output valid signal
+        clk         : in  STD_LOGIC;
+        rst         : in  STD_LOGIC;
+        valid_in    : in  STD_LOGIC;
+        data_in     : in  STD_LOGIC_VECTOR(7 downto 0);
+        decoded_out : out STD_LOGIC_VECTOR(7 downto 0);
+        valid_out   : out STD_LOGIC
     );
 end decoding;
 
 architecture Behavioral of decoding is
+    signal data_reg  : std_logic_vector(7 downto 0) := (others => '0');
+    signal valid_reg : std_logic := '0';
 begin
 
-    -- Main process for decoding
-    process(clk, rst)
+    process(clk)
     begin
-        if rst = '1' then
-            -- Reset all outputs
-            decoded_out <= (others => '0');
-            valid_out   <= '0';
-        elsif rising_edge(clk) then
-            if valid_in = '1' then
-                -- Data is considered valid, pass it through
-                -- Here you can apply more decoding logic if needed
-                decoded_out <= data_in;
-                valid_out   <= '1';
+        if rising_edge(clk) then
+            if rst = '1' then
+                data_reg  <= (others => '0');
+                valid_reg <= '0';
+            elsif valid_in = '1' then
+                data_reg  <= data_in;
+                valid_reg <= '1';
+                report "[DEBUG] Decoding: Received valid data = " & integer'image(to_integer(unsigned(data_in))) severity note;
             else
-                -- No valid input data
-                valid_out <= '0';
+                valid_reg <= '0';
             end if;
         end if;
     end process;
+
+    decoded_out <= data_reg;
+    valid_out   <= valid_reg;
 
 end Behavioral;

@@ -1,57 +1,40 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03/29/2025 11:20:07 PM
--- Design Name: 
--- Module Name: data_reception - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity data_reception is
     Port (
-        clk             : in  STD_LOGIC;
-        rst             : in  STD_LOGIC;
-        rx_data_in      : in  STD_LOGIC_VECTOR (7 downto 0);
-        rx_valid_in     : in  STD_LOGIC;
-        received_data   : out STD_LOGIC_VECTOR (7 downto 0);
-        received_valid  : out STD_LOGIC;
-        crc_error       : out STD_LOGIC;
-        crc_error_led   : out STD_LOGIC;  -- LED output for CRC error
-        to_decryption   : out STD_LOGIC_VECTOR (7 downto 0); -- forward path
-        valid_to_decryption : out STD_LOGIC
+        clk                  : in  STD_LOGIC;
+        rst                  : in  STD_LOGIC;
+        rx_data_in           : in  STD_LOGIC_VECTOR (7 downto 0);
+        rx_valid_in          : in  STD_LOGIC;
+        received_data        : out STD_LOGIC_VECTOR (7 downto 0);
+        received_valid       : out STD_LOGIC;
+        crc_error            : out STD_LOGIC;
+        crc_error_led        : out STD_LOGIC;
+        to_decryption        : out STD_LOGIC_VECTOR (7 downto 0);
+        valid_to_decryption  : out STD_LOGIC
     );
 end data_reception;
 
 architecture Behavioral of data_reception is
-    signal data_byte   : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-    signal crc_byte    : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-    signal byte_count  : integer range 0 to 1 := 0;
-    signal valid_reg   : STD_LOGIC := '0';
-    signal crc_fail    : STD_LOGIC := '0';
+
+    type state_type is (IDLE, WAIT_CRC);
+    signal state          : state_type := IDLE;
+
+    signal data_byte      : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
+    signal valid_reg      : STD_LOGIC := '0';
+    signal crc_fail       : STD_LOGIC := '0';
+
+    signal rx_valid_d     : STD_LOGIC := '0';
+    signal rx_rising_edge : STD_LOGIC;
 
     function crc8(data : STD_LOGIC_VECTOR(7 downto 0)) return STD_LOGIC_VECTOR is
         variable crc : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-        variable din : STD_LOGIC_VECTOR(7 downto 0) := data;
     begin
         for i in 7 downto 0 loop
-            if (crc(7) xor din(i)) = '1' then
-                crc := (crc(6 downto 0) & '0') xor "00110001";
+            if (crc(7) xor data(i)) = '1' then
+                crc := (crc(6 downto 0) & '0') xor "00000111";
             else
                 crc := crc(6 downto 0) & '0';
             end if;
@@ -61,32 +44,44 @@ architecture Behavioral of data_reception is
 
 begin
 
+    rx_rising_edge <= '1' when (rx_valid_in = '1' and rx_valid_d = '0') else '0';
+
     process(clk)
     begin
         if rising_edge(clk) then
+            rx_valid_d <= rx_valid_in;
+
             if rst = '1' then
+                state       <= IDLE;
                 data_byte   <= (others => '0');
-                crc_byte    <= (others => '0');
-                byte_count  <= 0;
                 valid_reg   <= '0';
                 crc_fail    <= '0';
+
             else
                 valid_reg   <= '0';
                 crc_fail    <= '0';
 
-                if rx_valid_in = '1' then
-                    if byte_count = 0 then
-                        data_byte  <= rx_data_in;
-                        byte_count <= 1;
-                    elsif byte_count = 1 then
-                        crc_byte   <= rx_data_in;
-                        if crc8(data_byte) /= rx_data_in then
-                            crc_fail <= '1';
-                        else
-                            valid_reg <= '1';
-                        end if;
-                        byte_count <= 0;
-                    end if;
+                if rx_rising_edge = '1' then
+                    case state is
+                        when IDLE =>
+                            data_byte <= rx_data_in;
+                            state <= WAIT_CRC;
+                            report "[DEBUG] Received data byte: " & integer'image(to_integer(unsigned(rx_data_in))) severity note;
+
+                        when WAIT_CRC =>
+                            report "[DEBUG] Received CRC byte: " & integer'image(to_integer(unsigned(rx_data_in))) severity note;
+                            report "[DEBUG] Expected CRC = " & integer'image(to_integer(unsigned(crc8(data_byte)))) severity note;
+
+                            if crc8(data_byte) = rx_data_in then
+                                valid_reg <= '1';
+                                report "[DEBUG] CRC check passed. Forwarding data to decryption: " & integer'image(to_integer(unsigned(data_byte))) severity note;
+                            else
+                                crc_fail <= '1';
+                                report "[DEBUG] CRC mismatch! expected = " & integer'image(to_integer(unsigned(crc8(data_byte)))) & 
+                                       ", got = " & integer'image(to_integer(unsigned(rx_data_in))) severity note;
+                            end if;
+                            state <= IDLE;
+                    end case;
                 end if;
             end if;
         end if;
@@ -95,8 +90,9 @@ begin
     received_data         <= data_byte;
     received_valid        <= valid_reg;
     crc_error             <= crc_fail;
-    crc_error_led         <= crc_fail; -- LED mirrors CRC error
+    crc_error_led         <= crc_fail;
     to_decryption         <= data_byte;
     valid_to_decryption   <= valid_reg;
 
 end Behavioral;
+

@@ -18,7 +18,6 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -44,6 +43,7 @@ architecture Behavioral of bram_fsm_controller is
     signal read_ptr  : unsigned(3 downto 0) := (others => '0');
     signal state     : std_logic := '0';  -- '0' = write, '1' = read
 begin
+
     process(clk, rst)
     begin
         if rst = '1' then
@@ -68,16 +68,17 @@ begin
                         end if;
 
                     when '1' =>  -- Read mode
-                        bram_addr <= std_logic_vector(read_ptr);
-                        bram_we   <= '0';
-                        data_out  <= bram_dout;
+                        bram_addr  <= std_logic_vector(read_ptr);
+                        bram_we    <= '0';
+                        data_out   <= bram_dout;
                         data_valid <= '1';
-                        read_ptr  <= read_ptr + 1;
-                        state     <= '0';
+                        read_ptr   <= read_ptr + 1;
+                        state      <= '0';
 
                     when others => null;
                 end case;
             end if;
         end if;
     end process;
+
 end Behavioral;

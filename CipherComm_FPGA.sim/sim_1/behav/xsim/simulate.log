@@ -1,0 +1,705 @@
+Time resolution is 1 ps
+Note: [DEBUG][BRAM] Write: 85 @ addr: 0
+Time: 55 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 90, crc = 139, parity = ''0''
+Time: 105 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 22, parity = ''0''
+Time: 115 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 15, crc = 233, parity = ''0''
+Time: 125 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 210, parity = ''0''
+Time: 135 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 80, parity = ''0''
+Time: 145 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 245, crc = 160, parity = ''0''
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] FIFO read: 166746
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG][BRAM] Write: 170 @ addr: 1
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 5, crc = 133, parity = ''0''
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending DATA byte: 90
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 228, crc = 10, parity = ''0''
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending CRC byte: 139
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG] Received data byte: 90
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_rx/line__49  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_reception.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 38, crc = 224, parity = ''0''
+Time: 185 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 163, crc = 4, parity = ''0''
+Time: 195 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 168, crc = 39, parity = ''0''
+Time: 205 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 191, crc = 70, parity = ''0''
+Time: 215 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 197, crc = 132, parity = ''0''
+Time: 225 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 155, crc = 197, parity = ''0''
+Time: 235 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 39, crc = 118, parity = ''0''
+Time: 245 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 95, crc = 228, parity = ''0''
+Time: 255 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 174, crc = 5, parity = ''0''
+Time: 265 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 77, crc = 51, parity = ''0''
+Time: 275 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 139, crc = 171, parity = ''0''
+Time: 285 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 6, crc = 170, parity = ''0''
+Time: 295 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 28, crc = 168, parity = ''0''
+Time: 305 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 40, crc = 172, parity = ''0''
+Time: 315 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 64, crc = 80, parity = ''0''
+Time: 325 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 144, crc = 109, parity = ''0''
+Time: 335 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 48, crc = 23, parity = ''0''
+Time: 345 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 112, crc = 38, parity = ''0''
+Time: 355 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 68, parity = ''0''
+Time: 365 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 128, parity = ''0''
+Time: 375 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 243, crc = 57, parity = ''0''
+Time: 385 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 247, crc = 75, parity = ''0''
+Time: 395 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 255, crc = 158, parity = ''0''
+Time: 405 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 238, crc = 52, parity = ''0''
+Time: 415 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 205, crc = 81, parity = ''0''
+Time: 425 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 138, crc = 111, parity = ''0''
+Time: 435 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 4, crc = 19, parity = ''0''
+Time: 445 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 24, crc = 218, parity = ''0''
+Time: 455 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 32, crc = 121, parity = ''0''
+Time: 465 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 81, crc = 250, parity = ''0''
+Time: 475 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 179, crc = 8, parity = ''0''
+Time: 485 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 119, crc = 41, parity = ''0''
+Time: 495 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 254, crc = 90, parity = ''0''
+Time: 505 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 236, crc = 141, parity = ''0''
+Time: 515 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 201, crc = 35, parity = ''0''
+Time: 525 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 130, crc = 186, parity = ''0''
+Time: 535 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 21, crc = 185, parity = ''0''
+Time: 545 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 59, crc = 191, parity = ''0''
+Time: 555 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 103, crc = 71, parity = ''0''
+Time: 565 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 223, crc = 134, parity = ''0''
+Time: 575 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 175, crc = 193, parity = ''0''
+Time: 585 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 79, crc = 138, parity = ''0''
+Time: 595 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 143, crc = 217, parity = ''0''
+Time: 605 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 14, crc = 127, parity = ''0''
+Time: 615 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 2, parity = ''0''
+Time: 625 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 11, crc = 201, parity = ''0''
+Time: 635 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 7, crc = 110, parity = ''0''
+Time: 645 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 30, crc = 17, parity = ''0''
+Time: 655 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: Simulation ended successfully
+Time: 660 ns  Iteration: 0  Process: /top_level_tb/line__125  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sim_1/new/top_level_stress_tb.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 44, crc = 222, parity = ''0''
+Time: 665 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 72, crc = 133, parity = ''0''
+Time: 675 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 129, crc = 199, parity = ''0''
+Time: 685 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 19, crc = 114, parity = ''0''
+Time: 695 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 55, crc = 24, parity = ''0''
+Time: 705 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 126, crc = 56, parity = ''0''
+Time: 715 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 237, crc = 73, parity = ''0''
+Time: 725 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 203, crc = 154, parity = ''0''
+Time: 735 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 134, crc = 200, parity = ''0''
+Time: 745 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 29, crc = 108, parity = ''0''
+Time: 755 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 42, crc = 21, parity = ''0''
+Time: 765 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 68, crc = 34, parity = ''0''
+Time: 775 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 152, crc = 184, parity = ''0''
+Time: 785 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 33, crc = 189, parity = ''0''
+Time: 795 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 83, crc = 67, parity = ''0''
+Time: 805 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 183, crc = 122, parity = ''0''
+Time: 815 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 127, crc = 252, parity = ''0''
+Time: 825 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 239, crc = 240, parity = ''0''
+Time: 835 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 207, crc = 232, parity = ''0''
+Time: 845 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 142, crc = 29, parity = ''0''
+Time: 855 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 12, crc = 198, parity = ''0''
+Time: 865 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 9, crc = 112, parity = ''0''
+Time: 875 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 3, crc = 28, parity = ''0''
+Time: 885 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 22, crc = 196, parity = ''0''
+Time: 895 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 61, crc = 116, parity = ''0''
+Time: 905 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 107, crc = 224, parity = ''0''
+Time: 915 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 198, crc = 249, parity = ''0''
+Time: 925 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 157, crc = 14, parity = ''0''
+Time: 935 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 43, crc = 209, parity = ''0''
+Time: 945 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 70, crc = 155, parity = ''0''
+Time: 955 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 156, crc = 202, parity = ''0''
+Time: 965 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 41, crc = 104, parity = ''0''
+Time: 975 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 66, crc = 233, parity = ''0''
+Time: 985 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 148, crc = 31, parity = ''0''
+Time: 995 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][BRAM] Write: 85 @ addr: 0
+Time: 55 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 90, crc = 139, parity = ''0''
+Time: 105 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 22, parity = ''0''
+Time: 115 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 15, crc = 233, parity = ''0''
+Time: 125 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 210, parity = ''0''
+Time: 135 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 80, parity = ''0''
+Time: 145 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 245, crc = 160, parity = ''0''
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] FIFO read: 166746
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG][BRAM] Write: 170 @ addr: 1
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 5, crc = 133, parity = ''0''
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending DATA byte: 90
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 228, crc = 10, parity = ''0''
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending CRC byte: 139
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG] Received data byte: 90
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_rx/line__49  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_reception.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 38, crc = 224, parity = ''0''
+Time: 185 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 163, crc = 4, parity = ''0''
+Time: 195 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 168, crc = 39, parity = ''0''
+Time: 205 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 191, crc = 70, parity = ''0''
+Time: 215 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 197, crc = 132, parity = ''0''
+Time: 225 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 155, crc = 197, parity = ''0''
+Time: 235 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 39, crc = 118, parity = ''0''
+Time: 245 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 95, crc = 228, parity = ''0''
+Time: 255 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 174, crc = 5, parity = ''0''
+Time: 265 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 77, crc = 51, parity = ''0''
+Time: 275 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 139, crc = 171, parity = ''0''
+Time: 285 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 6, crc = 170, parity = ''0''
+Time: 295 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 28, crc = 168, parity = ''0''
+Time: 305 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 40, crc = 172, parity = ''0''
+Time: 315 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 64, crc = 80, parity = ''0''
+Time: 325 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 144, crc = 109, parity = ''0''
+Time: 335 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 48, crc = 23, parity = ''0''
+Time: 345 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 112, crc = 38, parity = ''0''
+Time: 355 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 68, parity = ''0''
+Time: 365 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 128, parity = ''0''
+Time: 375 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 243, crc = 57, parity = ''0''
+Time: 385 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 247, crc = 75, parity = ''0''
+Time: 395 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 255, crc = 158, parity = ''0''
+Time: 405 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 238, crc = 52, parity = ''0''
+Time: 415 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 205, crc = 81, parity = ''0''
+Time: 425 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 138, crc = 111, parity = ''0''
+Time: 435 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 4, crc = 19, parity = ''0''
+Time: 445 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 24, crc = 218, parity = ''0''
+Time: 455 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 32, crc = 121, parity = ''0''
+Time: 465 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 81, crc = 250, parity = ''0''
+Time: 475 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 179, crc = 8, parity = ''0''
+Time: 485 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 119, crc = 41, parity = ''0''
+Time: 495 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 254, crc = 90, parity = ''0''
+Time: 505 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 236, crc = 141, parity = ''0''
+Time: 515 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 201, crc = 35, parity = ''0''
+Time: 525 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 130, crc = 186, parity = ''0''
+Time: 535 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 21, crc = 185, parity = ''0''
+Time: 545 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 59, crc = 191, parity = ''0''
+Time: 555 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 103, crc = 71, parity = ''0''
+Time: 565 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 223, crc = 134, parity = ''0''
+Time: 575 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 175, crc = 193, parity = ''0''
+Time: 585 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 79, crc = 138, parity = ''0''
+Time: 595 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 143, crc = 217, parity = ''0''
+Time: 605 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 14, crc = 127, parity = ''0''
+Time: 615 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 2, parity = ''0''
+Time: 625 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 11, crc = 201, parity = ''0''
+Time: 635 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 7, crc = 110, parity = ''0''
+Time: 645 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 30, crc = 17, parity = ''0''
+Time: 655 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: Simulation ended successfully
+Time: 660 ns  Iteration: 0  Process: /top_level_tb/line__125  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sim_1/new/top_level_stress_tb.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 44, crc = 222, parity = ''0''
+Time: 665 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 72, crc = 133, parity = ''0''
+Time: 675 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 129, crc = 199, parity = ''0''
+Time: 685 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 19, crc = 114, parity = ''0''
+Time: 695 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 55, crc = 24, parity = ''0''
+Time: 705 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 126, crc = 56, parity = ''0''
+Time: 715 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 237, crc = 73, parity = ''0''
+Time: 725 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 203, crc = 154, parity = ''0''
+Time: 735 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 134, crc = 200, parity = ''0''
+Time: 745 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 29, crc = 108, parity = ''0''
+Time: 755 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 42, crc = 21, parity = ''0''
+Time: 765 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 68, crc = 34, parity = ''0''
+Time: 775 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 152, crc = 184, parity = ''0''
+Time: 785 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 33, crc = 189, parity = ''0''
+Time: 795 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][BRAM] Write: 85 @ addr: 0
+Time: 55 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 90, crc = 139, parity = ''0''
+Time: 105 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 22, parity = ''0''
+Time: 115 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 15, crc = 233, parity = ''0''
+Time: 125 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 210, parity = ''0''
+Time: 135 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 80, parity = ''0''
+Time: 145 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 245, crc = 160, parity = ''0''
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] FIFO read: 166746
+Time: 155 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG][BRAM] Write: 170 @ addr: 1
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_input/line__94  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 5, crc = 133, parity = ''0''
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending DATA byte: 90
+Time: 165 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 228, crc = 10, parity = ''0''
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [DEBUG][TX] Sending CRC byte: 139
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_tx/line__34  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd
+Note: [DEBUG] Received data byte: 90
+Time: 175 ns  Iteration: 0  Process: /top_level_tb/uut/u_rx/line__49  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_reception.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 38, crc = 224, parity = ''0''
+Time: 185 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 163, crc = 4, parity = ''0''
+Time: 195 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 168, crc = 39, parity = ''0''
+Time: 205 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 191, crc = 70, parity = ''0''
+Time: 215 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 197, crc = 132, parity = ''0''
+Time: 225 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 155, crc = 197, parity = ''0''
+Time: 235 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 39, crc = 118, parity = ''0''
+Time: 245 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 95, crc = 228, parity = ''0''
+Time: 255 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 174, crc = 5, parity = ''0''
+Time: 265 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 77, crc = 51, parity = ''0''
+Time: 275 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 139, crc = 171, parity = ''0''
+Time: 285 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 6, crc = 170, parity = ''0''
+Time: 295 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 28, crc = 168, parity = ''0''
+Time: 305 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 40, crc = 172, parity = ''0''
+Time: 315 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 64, crc = 80, parity = ''0''
+Time: 325 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 144, crc = 109, parity = ''0''
+Time: 335 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 48, crc = 23, parity = ''0''
+Time: 345 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 112, crc = 38, parity = ''0''
+Time: 355 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 240, crc = 68, parity = ''0''
+Time: 365 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 241, crc = 128, parity = ''0''
+Time: 375 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 243, crc = 57, parity = ''0''
+Time: 385 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 247, crc = 75, parity = ''0''
+Time: 395 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 255, crc = 158, parity = ''0''
+Time: 405 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 238, crc = 52, parity = ''0''
+Time: 415 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 205, crc = 81, parity = ''0''
+Time: 425 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 138, crc = 111, parity = ''0''
+Time: 435 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 4, crc = 19, parity = ''0''
+Time: 445 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 24, crc = 218, parity = ''0''
+Time: 455 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 32, crc = 121, parity = ''0''
+Time: 465 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 81, crc = 250, parity = ''0''
+Time: 475 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 179, crc = 8, parity = ''0''
+Time: 485 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 119, crc = 41, parity = ''0''
+Time: 495 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 254, crc = 90, parity = ''0''
+Time: 505 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 236, crc = 141, parity = ''0''
+Time: 515 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 201, crc = 35, parity = ''0''
+Time: 525 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 130, crc = 186, parity = ''0''
+Time: 535 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 21, crc = 185, parity = ''0''
+Time: 545 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 59, crc = 191, parity = ''0''
+Time: 555 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 103, crc = 71, parity = ''0''
+Time: 565 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 223, crc = 134, parity = ''0''
+Time: 575 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 175, crc = 193, parity = ''0''
+Time: 585 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 79, crc = 138, parity = ''0''
+Time: 595 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 143, crc = 217, parity = ''0''
+Time: 605 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 14, crc = 127, parity = ''0''
+Time: 615 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 13, crc = 2, parity = ''0''
+Time: 625 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 11, crc = 201, parity = ''0''
+Time: 635 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 7, crc = 110, parity = ''0''
+Time: 645 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 30, crc = 17, parity = ''0''
+Time: 655 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: Simulation ended successfully
+Time: 660 ns  Iteration: 0  Process: /top_level_tb/line__125  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sim_1/new/top_level_stress_tb.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 44, crc = 222, parity = ''0''
+Time: 665 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 72, crc = 133, parity = ''0''
+Time: 675 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 129, crc = 199, parity = ''0''
+Time: 685 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 19, crc = 114, parity = ''0''
+Time: 695 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 55, crc = 24, parity = ''0''
+Time: 705 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 126, crc = 56, parity = ''0''
+Time: 715 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 237, crc = 73, parity = ''0''
+Time: 725 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 203, crc = 154, parity = ''0''
+Time: 735 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 134, crc = 200, parity = ''0''
+Time: 745 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 29, crc = 108, parity = ''0''
+Time: 755 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 42, crc = 21, parity = ''0''
+Time: 765 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 68, crc = 34, parity = ''0''
+Time: 775 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 152, crc = 184, parity = ''0''
+Time: 785 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 33, crc = 189, parity = ''0''
+Time: 795 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 83, crc = 67, parity = ''0''
+Time: 805 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 183, crc = 122, parity = ''0''
+Time: 815 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 127, crc = 252, parity = ''0''
+Time: 825 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 239, crc = 240, parity = ''0''
+Time: 835 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 207, crc = 232, parity = ''0''
+Time: 845 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 142, crc = 29, parity = ''0''
+Time: 855 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 12, crc = 198, parity = ''0''
+Time: 865 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 9, crc = 112, parity = ''0''
+Time: 875 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 3, crc = 28, parity = ''0''
+Time: 885 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 22, crc = 196, parity = ''0''
+Time: 895 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 61, crc = 116, parity = ''0''
+Time: 905 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 107, crc = 224, parity = ''0''
+Time: 915 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 198, crc = 249, parity = ''0''
+Time: 925 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 157, crc = 14, parity = ''0''
+Time: 935 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 43, crc = 209, parity = ''0''
+Time: 945 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 70, crc = 155, parity = ''0''
+Time: 955 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 156, crc = 202, parity = ''0''
+Time: 965 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 41, crc = 104, parity = ''0''
+Time: 975 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 66, crc = 233, parity = ''0''
+Time: 985 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 148, crc = 31, parity = ''0''
+Time: 995 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 56, crc = 194, parity = ''0''
+Time: 1005 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 97, crc = 140, parity = ''0''
+Time: 1015 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 211, crc = 33, parity = ''0''
+Time: 1025 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 182, crc = 190, parity = ''0''
+Time: 1035 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 125, crc = 69, parity = ''0''
+Time: 1045 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 235, crc = 130, parity = ''0''
+Time: 1055 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 199, crc = 61, parity = ''0''
+Time: 1065 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 159, crc = 183, parity = ''0''
+Time: 1075 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 47, crc = 163, parity = ''0''
+Time: 1085 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 78, crc = 78, parity = ''0''
+Time: 1095 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 141, crc = 96, parity = ''0''
+Time: 1105 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 10, crc = 13, parity = ''0''
+Time: 1115 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 5, crc = 215, parity = ''0''
+Time: 1125 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 26, crc = 99, parity = ''0''
+Time: 1135 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 36, crc = 11, parity = ''0''
+Time: 1145 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 89, crc = 47, parity = ''0''
+Time: 1155 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 162, crc = 162, parity = ''0''
+Time: 1165 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 84, crc = 76, parity = ''0''
+Time: 1175 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 185, crc = 100, parity = ''0''
+Time: 1185 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 98, crc = 241, parity = ''0''
+Time: 1195 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 213, crc = 234, parity = ''0''
+Time: 1205 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 186, crc = 25, parity = ''0''
+Time: 1215 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 100, crc = 58, parity = ''0''
+Time: 1225 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 217, crc = 77, parity = ''0''
+Time: 1235 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 163, crc = 102, parity = ''0''
+Time: 1245 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 86, crc = 245, parity = ''0''
+Time: 1255 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 189, crc = 22, parity = ''0''
+Time: 1265 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 106, crc = 36, parity = ''0''
+Time: 1275 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 196, crc = 64, parity = ''0''
+Time: 1285 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 153, crc = 124, parity = ''0''
+Time: 1295 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 35, crc = 4, parity = ''0''
+Time: 1305 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 87, crc = 49, parity = ''0''
+Time: 1315 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 191, crc = 175, parity = ''0''
+Time: 1325 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 110, crc = 86, parity = ''0''
+Time: 1335 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 204, crc = 149, parity = ''0''
+Time: 1345 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 136, crc = 214, parity = ''0''
+Time: 1355 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 0, crc = 97, parity = ''0''
+Time: 1365 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 16, crc = 15, parity = ''0''
+Time: 1375 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 49, crc = 211, parity = ''0''
+Time: 1385 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 114, crc = 159, parity = ''0''
+Time: 1395 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 244, crc = 54, parity = ''0''
+Time: 1405 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 249, crc = 85, parity = ''0''
+Time: 1415 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 226, crc = 147, parity = ''0''
+Time: 1425 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 212, crc = 46, parity = ''0''
+Time: 1435 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 184, crc = 160, parity = ''0''
+Time: 1445 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 96, crc = 72, parity = ''0''
+Time: 1455 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 209, crc = 152, parity = ''0''
+Time: 1465 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 178, crc = 204, parity = ''0''
+Time: 1475 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 117, crc = 144, parity = ''0''
+Time: 1485 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 250, crc = 40, parity = ''0''
+Time: 1495 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 228, crc = 88, parity = ''0''
+Time: 1505 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 216, crc = 137, parity = ''0''
+Time: 1515 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 161, crc = 223, parity = ''0''
+Time: 1525 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 82, crc = 135, parity = ''0''
+Time: 1535 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 181, crc = 195, parity = ''0''
+Time: 1545 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 123, crc = 142, parity = ''0''
+Time: 1555 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 231, crc = 37, parity = ''0''
+Time: 1565 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 222, crc = 66, parity = ''0''
+Time: 1575 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 173, crc = 120, parity = ''0''
+Time: 1585 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 75, crc = 248, parity = ''0''
+Time: 1595 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 135, crc = 12, parity = ''0''
+Time: 1605 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 31, crc = 213, parity = ''0''
+Time: 1615 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 46, crc = 103, parity = ''0''
+Time: 1625 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 76, crc = 247, parity = ''0''
+Time: 1635 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 137, crc = 18, parity = ''0''
+Time: 1645 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 2, crc = 216, parity = ''0''
+Time: 1655 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 20, crc = 125, parity = ''0''
+Time: 1665 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 57, crc = 6, parity = ''0''
+Time: 1675 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 99, crc = 53, parity = ''0''
+Time: 1685 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 215, crc = 83, parity = ''0''
+Time: 1695 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 190, crc = 107, parity = ''0''
+Time: 1705 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 108, crc = 239, parity = ''0''
+Time: 1715 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 200, crc = 231, parity = ''0''
+Time: 1725 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 128, crc = 3, parity = ''0''
+Time: 1735 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 17, crc = 203, parity = ''0''
+Time: 1745 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 51, crc = 106, parity = ''0''
+Time: 1755 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 118, crc = 237, parity = ''0''
+Time: 1765 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 252, crc = 227, parity = ''0''
+Time: 1775 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 232, crc = 255, parity = ''0''
+Time: 1785 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 193, crc = 246, parity = ''0''
+Time: 1795 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
+Note: [BRIDGE] Writing to FIFO: encrypted_data = 147, crc = 16, parity = ''0''
+Time: 1805 ns  Iteration: 0  Process: /top_level_tb/uut/u_bridge/line__25  File: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd
