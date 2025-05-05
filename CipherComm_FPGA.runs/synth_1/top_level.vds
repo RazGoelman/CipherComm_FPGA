@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Apr 20 01:24:58 2025
-# Process ID: 820912
+# Start of session at: Tue Apr 29 21:36:55 2025
+# Process ID: 56510
 # Current directory: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1
 # Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1/top_level.vds
@@ -15,67 +15,54 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/razgo/Documents/FPGA/FP
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top top_level -part xc7a100tcsg324-1
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 820947
+INFO: [Synth 8-7075] Helper process launched with PID 56587
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2609.891 ; gain = 0.000 ; free physical = 2180 ; free virtual = 6177
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2610.891 ; gain = 0.000 ; free physical = 4438 ; free virtual = 7985
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_level' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/top_level.vhd:50]
-INFO: [Synth 8-638] synthesizing module 'input_layer_top' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:53]
-INFO: [Synth 8-3491] module 'multi_comm_input' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:25' bound to instance 'u_mux' of component 'multi_comm_input' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:111]
-INFO: [Synth 8-638] synthesizing module 'multi_comm_input' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'multi_comm_input' (1#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:43]
-INFO: [Synth 8-3491] module 'bram_fsm_controller' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:26' bound to instance 'u_bram_fsm' of component 'bram_fsm_controller' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'bram_fsm_controller' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:42]
-INFO: [Synth 8-226] default block is never used [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'bram_fsm_controller' (2#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'input_layer_top' (3#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'encoder_layer' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encoder_layer.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'encoder_layer' (4#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encoder_layer.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'top_level' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/top_level.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'input_layer_top' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:31]
+INFO: [Synth 8-3491] module 'multi_comm_input' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:6' bound to instance 'u_mux' of component 'multi_comm_input' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'multi_comm_input' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'multi_comm_input' (1#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/multi_comm_input.vhd:25]
+INFO: [Synth 8-3491] module 'bram_fsm_controller' declared at '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:25' bound to instance 'u_bram_fsm' of component 'bram_fsm_controller' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'bram_fsm_controller' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:41]
+INFO: [Synth 8-226] default block is never used [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'bram_fsm_controller' (2#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/bram_fsm_controller.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'input_layer_top' (3#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/input_layer_top.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'encoder_layer' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encoder_layer.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'encoder_layer' (4#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encoder_layer.vhd:18]
 INFO: [Synth 8-638] synthesizing module 'scrambler' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/scrambler.vhd:23]
 INFO: [Synth 8-256] done synthesizing module 'scrambler' (5#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/scrambler.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'encryption_layer' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_layer.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'encryption_interface' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_interface.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'encryption_interface' (6#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_interface.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'encryption_layer' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_layer.vhd:17]
 INFO: [Synth 8-638] synthesizing module 'encryption_logic' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_logic.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'encryption_logic' (7#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_logic.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'encryption_layer' (8#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_layer.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'encryption_to_fifo_bridge' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'encryption_to_fifo_bridge' (9#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1/.Xil/Vivado-820912-razgo-Latitude-7400/realtime/fifo_generator_0_stub.vhdl:19]
-INFO: [Synth 8-638] synthesizing module 'data_transmission' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'data_transmission' (10#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'data_reception' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_reception.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'data_reception' (11#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_reception.vhd:20]
-INFO: [Synth 8-638] synthesizing module 'decryption_logic' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/decryption_logic.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'decryption_logic' (12#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/decryption_logic.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'unscrambler' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/unscrambler.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'unscrambler' (13#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/unscrambler.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'decoding' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/decoding.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'decoding' (14#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/decoding.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'output_display' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/output_display.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'output_display' (15#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/output_display.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'top_level' (16#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/top_level.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'encryption_logic' (6#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_logic.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'encryption_interface' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_interface.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'encryption_interface' (7#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_interface.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'encryption_layer' (8#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_layer.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'encryption_to_fifo_bridge' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'encryption_to_fifo_bridge' (9#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/encryption_to_fifo_bridge.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1/.Xil/Vivado-56510-razgo-Latitude-7400/realtime/fifo_generator_0_stub.vhdl:19]
+INFO: [Synth 8-638] synthesizing module 'data_transmission' [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'data_transmission' (10#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/data_transmission.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (11#1) [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.srcs/sources_1/new/top_level.vhd:61]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2609.891 ; gain = 0.000 ; free physical = 1498 ; free virtual = 5495
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2610.891 ; gain = 0.000 ; free physical = 3579 ; free virtual = 7126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2609.891 ; gain = 0.000 ; free physical = 1412 ; free virtual = 5408
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2610.891 ; gain = 0.000 ; free physical = 3585 ; free virtual = 7131
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2609.891 ; gain = 0.000 ; free physical = 1412 ; free virtual = 5408
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2610.891 ; gain = 0.000 ; free physical = 3585 ; free virtual = 7131
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2609.891 ; gain = 0.000 ; free physical = 1412 ; free virtual = 5408
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2610.891 ; gain = 0.000 ; free physical = 3585 ; free virtual = 7131
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -83,107 +70,28 @@ Initializing timing engine
 Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/InputInterfaceLayer_fifo_generator_0_0_in_context.xdc] for cell 'u_fifo'
 Finished Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/InputInterfaceLayer_fifo_generator_0_0_in_context.xdc] for cell 'u_fifo'
 Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:38]
-WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:45]
-WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:46]
-WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:47]
-WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:70]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:71]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:72]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:74]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:75]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:80]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:81]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:82]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:83]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:84]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:85]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:86]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:88]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:90]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:91]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:92]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:93]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:94]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:95]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'SSEG_AN[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:97]
-WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:104]
-WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:105]
-WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:106]
-WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:107]
-WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:108]
-WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:209]
-WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:210]
-WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:211]
-WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:212]
-WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:213]
-WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:214]
-WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:219]
-WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:220]
-WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:221]
-WARNING: [Vivado 12-584] No ports matched 'TMP_CT'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:222]
-WARNING: [Vivado 12-584] No ports matched 'micClk'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:226]
-WARNING: [Vivado 12-584] No ports matched 'micData'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:227]
-WARNING: [Vivado 12-584] No ports matched 'micLRSel'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:228]
-WARNING: [Vivado 12-584] No ports matched 'ampPWM'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:233]
-WARNING: [Vivado 12-584] No ports matched 'ampSD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:234]
-WARNING: [Vivado 12-584] No ports matched 'UART_TXD_IN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:239]
-WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:240]
-WARNING: [Vivado 12-584] No ports matched 'UART_CTS'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:241]
-WARNING: [Vivado 12-584] No ports matched 'UART_RTS'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:242]
-WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:268]
-WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:269]
-WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:270]
-WARNING: [Vivado 12-584] No ports matched 'QSPI_DQ[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:271]
-WARNING: [Vivado 12-584] No ports matched 'QSPI_CSN'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:272]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:275]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:276]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:277]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:278]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:279]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:280]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:281]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:282]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[8]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:283]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[9]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:284]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[10]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:285]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[11]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:286]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[12]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:287]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[13]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:288]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[14]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:289]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[15]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:290]
-WARNING: [Vivado 12-584] No ports matched 'gpio_io_o[*]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:291]
-WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:294]
-WARNING: [Vivado 12-584] No ports matched 'tx_busy_0'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:297]
-WARNING: [Vivado 12-584] No ports matched 'enable'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:305]
-WARNING: [Vivado 12-584] No ports matched 'enable'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:306]
-WARNING: [Vivado 12-584] No ports matched 'valid_in'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:309]
-WARNING: [Vivado 12-584] No ports matched 'valid_in'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:310]
-WARNING: [Vivado 12-584] No ports matched 'valid_out'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:314]
-WARNING: [Vivado 12-584] No ports matched 'valid_out'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:315]
-WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:318]
-WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:319]
-WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:320]
-WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:321]
-WARNING: [Vivado 12-584] No ports matched 'data_in[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:322]
-WARNING: [Vivado 12-584] No ports matched 'data_in[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:323]
-WARNING: [Vivado 12-584] No ports matched 'data_in[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:324]
-WARNING: [Vivado 12-584] No ports matched 'data_in[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc:44]
 Finished Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_level_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/Nexys-4-DDR-GPIO/src/constraints/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
@@ -192,66 +100,73 @@ Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/
 Finished Parsing XDC File [/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2673.828 ; gain = 0.000 ; free physical = 2060 ; free virtual = 6057
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2674.828 ; gain = 0.000 ; free physical = 4269 ; free virtual = 7815
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2673.828 ; gain = 0.000 ; free physical = 2060 ; free virtual = 6057
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2674.828 ; gain = 0.000 ; free physical = 4269 ; free virtual = 7815
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2091 ; free virtual = 6088
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4306 ; free virtual = 7852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2091 ; free virtual = 6088
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4306 ; free virtual = 7852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for u_fifo. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2091 ; free virtual = 6088
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4306 ; free virtual = 7852
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'data_transmission'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    idle |                            00001 |                              000
-              wait_rd_en |                            00010 |                              001
-               wait_data |                            00100 |                              010
-                    send |                            01000 |                              011
-            wait_tx_done |                            10000 |                              100
+                    idle |                              000 |                              000
+               read_fifo |                              001 |                              001
+          wait_one_cycle |                              010 |                              010
+               load_data |                              011 |                              011
+               send_data |                              100 |                              100
+                send_crc |                              101 |                              101
+            wait_tx_done |                              110 |                              110
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'data_transmission'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'data_transmission'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2076 ; free virtual = 6073
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4306 ; free virtual = 7852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
 +---XORs : 
-	   2 Input      8 Bit         XORs := 20    
+	   2 Input      8 Bit         XORs := 17    
 	   8 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 25    
 	   4 Input      1 Bit         XORs := 1     
 	   9 Input      1 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 7     
 +---Registers : 
-	               18 Bit    Registers := 2     
-	                8 Bit    Registers := 20    
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 19    
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
 +---RAMs : 
 	              128 Bit	(16 X 8 bit)          RAMs := 1     
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 14    
-	   2 Input    4 Bit        Muxes := 1     
-	   5 Input    1 Bit        Muxes := 5     
-	   2 Input    1 Bit        Muxes := 8     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 17    
+	   7 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -268,7 +183,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2070 ; free virtual = 6067
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4349 ; free virtual = 7895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -289,13 +204,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2040 ; free virtual = 6041
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4340 ; free virtual = 7887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2019 ; free virtual = 6020
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4325 ; free virtual = 7871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -315,7 +230,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2018 ; free virtual = 6019
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4317 ; free virtual = 7863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -333,37 +248,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -382,42 +297,42 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |fifo_generator |     1|
 |2     |BUFG           |     1|
-|3     |LUT1           |    22|
-|4     |LUT2           |    24|
-|5     |LUT3           |    12|
-|6     |LUT4           |    10|
-|7     |LUT5           |     9|
-|8     |LUT6           |    24|
+|3     |LUT1           |     7|
+|4     |LUT2           |    23|
+|5     |LUT3           |    28|
+|6     |LUT4           |    12|
+|7     |LUT5           |     3|
+|8     |LUT6           |     7|
 |9     |RAM16X1S       |     8|
-|10    |FDCE           |   125|
+|10    |FDCE           |    97|
 |11    |FDPE           |     4|
-|12    |FDRE           |    75|
-|13    |FDSE           |     1|
-|14    |IBUF           |    47|
-|15    |OBUF           |    77|
+|12    |FDRE           |    68|
+|13    |IBUF           |    11|
+|14    |OBUF           |    49|
+|15    |OBUFT          |    48|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2047 ; free virtual = 6053
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4353 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2673.828 ; gain = 0.000 ; free physical = 2055 ; free virtual = 6060
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2673.828 ; gain = 63.938 ; free physical = 2055 ; free virtual = 6060
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2674.828 ; gain = 0.000 ; free physical = 4378 ; free virtual = 7924
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2674.828 ; gain = 63.938 ; free physical = 4378 ; free virtual = 7924
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2673.828 ; gain = 0.000 ; free physical = 2142 ; free virtual = 6148
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2674.828 ; gain = 0.000 ; free physical = 4461 ; free virtual = 8007
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2673.828 ; gain = 0.000 ; free physical = 2153 ; free virtual = 6158
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2674.828 ; gain = 0.000 ; free physical = 4400 ; free virtual = 7946
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 8 instances
 
-Synth Design complete, checksum: c11dc494
+Synth Design complete, checksum: e5926b9f
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+46 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2673.828 ; gain = 64.031 ; free physical = 2238 ; free virtual = 6243
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 2674.828 ; gain = 64.031 ; free physical = 4490 ; free virtual = 8036
 INFO: [Common 17-1381] The checkpoint '/home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 20 01:25:28 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 21:37:38 2025...

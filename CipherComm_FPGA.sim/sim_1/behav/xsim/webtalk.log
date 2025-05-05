@@ -2,12 +2,12 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Apr 28 08:20:06 2025
-# Process ID: 237189
+# Start of session at: Mon May  5 13:44:15 2025
+# Process ID: 99780
 # Current directory: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/xsim.dir/top_level_e2e_debug_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/xsim.dir/top_level_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/xsim.dir/top_level_e2e_debug_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr 28 08:20:07 2025...
+source /home/razgo/Documents/FPGA/FPGA_FINAL_PROJECT/CipherComm_FPGA/CipherComm_FPGA.sim/sim_1/behav/xsim/xsim.dir/top_level_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  5 13:44:17 2025...

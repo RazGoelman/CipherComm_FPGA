@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1745101587">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1745951889">
+  <File Type="RCFI_FILE" Name="top_level.rcfi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_level_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_level_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="top_level_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_level_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="top_level_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="top_level_placed.dcp"/>
+  <File Type="OPT-DCP" Name="top_level_opt.dcp"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="top_level.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="top_level.sysdef"/>
@@ -8,22 +16,18 @@
   <File Type="BITSTR-NKY" Name="top_level.nky"/>
   <File Type="BITSTR-RBT" Name="top_level.rbt"/>
   <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
-  <File Type="RCFI_FILE" Name="top_level.rcfi"/>
   <File Type="RBD_FILE" Name="top_level.rbd"/>
   <File Type="BITSTR-MSK" Name="top_level.msk"/>
   <File Type="PA-TCL" Name="top_level.tcl"/>
   <File Type="ROUTE-TIMING-PB" Name="top_level_timing_summary_routed.pb"/>
   <File Type="OPT-DRC" Name="top_level_drc_opted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_level_postroute_physopt_bb.dcp"/>
   <File Type="NPI_FILE" Name="top_level.npi"/>
   <File Type="BG-BIN" Name="top_level.bin"/>
   <File Type="RNPI_FILE" Name="top_level.rnpi"/>
   <File Type="BG-BGN" Name="top_level.bgn"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="top_level_routed_bb.dcp"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="PWROPT-DCP" Name="top_level_pwropt.dcp"/>
   <File Type="RDI-RDI" Name="top_level.vdi"/>
-  <File Type="PHYSOPT-DCP" Name="top_level_physopt.dcp"/>
   <File Type="CFI_FILE" Name="top_level.cfi"/>
   <File Type="BG-DRC" Name="top_level.drc"/>
   <File Type="ROUTE-ERROR-DCP" Name="top_level_routed_error.dcp"/>
@@ -32,10 +36,6 @@
   <File Type="OPT-HWDEF" Name="top_level.hwdef"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="top_level_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-DCP" Name="top_level_routed.dcp"/>
-  <File Type="OPT-DCP" Name="top_level_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="top_level_placed.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="top_level_postplace_pwropt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_level_postroute_physopt.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/fifo_generator_0/fifo_generator_0.xci">
@@ -51,25 +51,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/data_reception.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/data_transmission.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/decoding.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/decryption_logic.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -117,19 +99,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/output_display.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/scrambler.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/unscrambler.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -137,6 +107,48 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/top_level.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_reception.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decoding.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decryption_logic.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/output_display.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/unscrambler.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/crc_utils.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

@@ -15,21 +15,26 @@ end decryption_logic;
 
 architecture Behavioral of decryption_logic is
     constant DECRYPTION_KEY : std_logic_vector(7 downto 0) := "10101010";
-    signal data_reg         : std_logic_vector(7 downto 0) := (others => '0');
-    signal valid_reg        : std_logic := '0';
+    signal data_reg      : std_logic_vector(7 downto 0) := (others => '0');
+    signal valid_reg     : std_logic := '0';
+    signal valid_counter : integer range 0 to 1 := 0;
 begin
-
     process(clk)
     begin
         if rising_edge(clk) then
             if rst = '1' then
-                data_reg  <= (others => '0');
-                valid_reg <= '0';
+                data_reg      <= (others => '0');
+                valid_reg     <= '0';
+                valid_counter <= 0;
             elsif valid_in = '1' then
-                data_reg  <= encrypted_data xor DECRYPTION_KEY;
-                valid_reg <= '1';
+                data_reg      <= encrypted_data xor DECRYPTION_KEY;
+                valid_reg     <= '1';
+                valid_counter <= 1;
                 report "[DEBUG] Decryption input: " & integer'image(to_integer(unsigned(encrypted_data))) &
                        ", decrypted: " & integer'image(to_integer(unsigned(encrypted_data xor DECRYPTION_KEY))) severity note;
+            elsif valid_counter = 1 then
+                valid_reg     <= '1';
+                valid_counter <= 0;
             else
                 valid_reg <= '0';
             end if;
@@ -38,5 +43,4 @@ begin
 
     decrypted_data <= data_reg;
     valid_out      <= valid_reg;
-
 end Behavioral;

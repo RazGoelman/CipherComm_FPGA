@@ -79,9 +79,21 @@ architecture sim of top_level_tb is
     signal decrypted_data_dbg_tb    : std_logic_vector(7 downto 0);
     signal unscrambled_data_dbg_tb  : std_logic_vector(7 downto 0);
 
+    -- Clock period constant
+    constant clk_period : time := 10 ns;
+
 begin
 
-    -- Instantiate the Unit Under Test (UUT)
+    -- Clock generation
+    clk_process : process
+    begin
+        clk_tb <= '0';
+        wait for clk_period / 2;
+        clk_tb <= '1';
+        wait for clk_period / 2;
+    end process;
+
+    -- Instantiate UUT
     uut: top_level
         port map (
             clk                    => clk_tb,
@@ -118,36 +130,53 @@ begin
             unscrambled_data_dbg   => unscrambled_data_dbg_tb
         );
 
-    -- Clock generation
-    clk_tb <= not clk_tb after 5 ns;
-
     -- Stimulus process
-    process
+    stimulus : process
     begin
-        -- Reset sequence
+        -- Reset system
         rst_tb <= '1';
-        wait for 20 ns;
+        wait for 30 ns;
         rst_tb <= '0';
-        
-        -- Send first UART data (simulate input)
-        wait for 20 ns;
-        uart_rx_data_tb <= x"55";  -- דוגמה לנתון
+
+        -- Wait for system to stabilize
+        wait for 50 ns;
+
+        -- Test Case 1: Correct Data and CRC
+        uart_rx_data_tb <= x"5A";  -- Data byte
         uart_rx_valid_tb <= '1';
-        wait for 10 ns;
+        wait for clk_period;
+        uart_rx_valid_tb <= '0';
+        wait for clk_period * 4;
+
+        uart_rx_data_tb <= x"07";  -- CRC byte (assuming correct CRC)
+        uart_rx_valid_tb <= '1';
+        wait for clk_period;
+        uart_rx_valid_tb <= '0';
+        wait for clk_period * 10;
+
+        -- Test Case 2: Incorrect CRC
+        uart_rx_data_tb <= x"A5";  -- Data byte
+        uart_rx_valid_tb <= '1';
+        wait for clk_period;
+        uart_rx_valid_tb <= '0';
+        wait for clk_period * 4;
+
+        uart_rx_data_tb <= x"00";  -- Bad CRC
+        uart_rx_valid_tb <= '1';
+        wait for clk_period;
         uart_rx_valid_tb <= '0';
 
-        -- Send CRC byte (simulate CRC follow-up)
-        wait for 100 ns;
-        uart_rx_data_tb <= x"AA";  -- דוגמה ל-CRC (תצטרך לשנות בהתאם)
-        uart_rx_valid_tb <= '1';
-        wait for 10 ns;
-        uart_rx_valid_tb <= '0';
+        -- Wait for output to propagate
+        wait for clk_period * 20;
 
-        -- Wait and observe
-        wait for 500 ns;
-        
-        -- Simulation end
-        assert false report "Simulation ended successfully" severity note;
+        -- Assertions
+        assert decoded_data_dbg_tb = x"5A"
+        report "Correct data received" severity note;
+
+        assert error_led_tb = '1'
+        report "CRC error triggered error LED as expected" severity note;
+
+        report "End of simulation" severity note;
         wait;
     end process;
 
