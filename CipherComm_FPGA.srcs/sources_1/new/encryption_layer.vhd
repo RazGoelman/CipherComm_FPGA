@@ -1,8 +1,12 @@
+-- encryption_layer.vhd - FINAL SAFE VERSION without debug_enable
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity encryption_layer is
+generic (
+        observation_window_cycles : natural := 5
+    );
     Port (
         clk                 : in  STD_LOGIC;
         reset               : in  STD_LOGIC;
@@ -18,6 +22,7 @@ architecture Behavioral of encryption_layer is
 
     signal internal_encrypted_data : STD_LOGIC_VECTOR(7 downto 0);
     signal internal_valid_out      : STD_LOGIC;
+    signal crc_reg                 : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
 
     function compute_crc8(data : STD_LOGIC_VECTOR(7 downto 0)) return STD_LOGIC_VECTOR is
         variable crc : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
@@ -63,13 +68,13 @@ begin
     begin
         if rising_edge(clk) then
             if reset = '1' then
-                crc_out <= (others => '0');
+                crc_reg <= (others => '0');
             elsif internal_valid_out = '1' then
-                crc_out <= compute_crc8(internal_encrypted_data);
-            else
-                crc_out <= (others => '0');
+                crc_reg <= compute_crc8(internal_encrypted_data);
             end if;
         end if;
     end process;
+
+    crc_out <= crc_reg;
 
 end Behavioral;

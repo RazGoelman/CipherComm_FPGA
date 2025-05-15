@@ -3,88 +3,85 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity data_reception is
-    Port (
-        clk                  : in  STD_LOGIC;
-        rst                  : in  STD_LOGIC;
-        rx_data_in           : in  STD_LOGIC_VECTOR (7 downto 0);
-        rx_valid_in          : in  STD_LOGIC;
-        received_data        : out STD_LOGIC_VECTOR (7 downto 0);
-        received_valid       : out STD_LOGIC;
-        crc_error            : out STD_LOGIC;
-        crc_error_led        : out STD_LOGIC;
-        to_decryption        : out STD_LOGIC_VECTOR (7 downto 0);
-        valid_to_decryption  : out STD_LOGIC
+    generic ( observation_window_cycles : natural := 1 );
+    port (
+        clk                 : in  std_logic;
+        rst                 : in  std_logic;
+        rx_data_in          : in  std_logic_vector(7 downto 0);
+        rx_valid_in         : in  std_logic;
+        ----------------------------------------------------------------
+        received_data       : out std_logic_vector(7 downto 0);
+        received_valid      : out std_logic;
+        crc_error           : out std_logic;
+        crc_error_led       : out std_logic;
+        to_decryption       : out std_logic_vector(7 downto 0);
+        valid_to_decryption : out std_logic;
+        parity_out          : out std_logic;
+        crc_out             : out std_logic_vector(7 downto 0)
     );
-end data_reception;
+end entity;
 
 architecture Behavioral of data_reception is
-
-    type state_type is (IDLE, WAIT_CRC);
-    signal state          : state_type := IDLE;
-
-    signal data_byte      : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-    signal valid_reg      : STD_LOGIC := '0';
-    signal crc_fail       : STD_LOGIC := '0';
-
-    signal rx_valid_d     : STD_LOGIC := '0';
-    signal rx_rising_edge : STD_LOGIC;
-
-    -- CRC8 function remains for future use
-    function crc8(data : STD_LOGIC_VECTOR(7 downto 0)) return STD_LOGIC_VECTOR is
-        variable crc : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
+    --------------------------------------------------------------------
+    --  ⬅ פונקציות-העזר ממוקמות כאן (איזור ההצהרות)
+    function calc_parity(d : std_logic_vector(7 downto 0)) return std_logic is
+        variable p : std_logic := '0';
     begin
-        for i in 7 downto 0 loop
-            if (crc(7) xor data(i)) = '1' then
-                crc := (crc(6 downto 0) & '0') xor "00000111";
-            else
-                crc := crc(6 downto 0) & '0';
+        for i in d'range loop
+            p := p xor d(i);
+        end loop;
+        return p;
+    end function;
+
+    function calc_crc8(d : std_logic_vector(7 downto 0)) return std_logic_vector is
+        variable crc : std_logic_vector(7 downto 0) := (others => '0');
+        variable x   : std_logic;
+    begin
+        for i in 0 to 7 loop
+            x   := crc(7) xor d(i);
+            crc := crc(6 downto 0) & '0';
+            if x = '1' then
+                crc := crc xor "00000111";
             end if;
         end loop;
         return crc;
     end function;
-
+    --------------------------------------------------------------------
+    signal data_reg  : std_logic_vector(7 downto 0) := (others => '0');
+    signal valid_reg : std_logic := '0';
+    signal win_cnt   : natural range 0 to observation_window_cycles := 0;
 begin
-
-    rx_rising_edge <= '1' when (rx_valid_in = '1' and rx_valid_d = '0') else '0';
-
-    process(clk)
+    --------------------------------------------------------------------
+    process(clk, rst)
     begin
-        if rising_edge(clk) then
-            rx_valid_d <= rx_valid_in;
+        if rst = '1' then
+            data_reg       <= (others => '0');
+            valid_reg      <= '0';
+            win_cnt        <= 0;
+            crc_error_led  <= '0';
+        elsif rising_edge(clk) then
+            if rx_valid_in = '1' then          -- לכידת נתון חדש
+                data_reg  <= rx_data_in;
+                valid_reg <= '1';
+                win_cnt   <= observation_window_cycles - 1;
 
-            if rst = '1' then
-                state       <= IDLE;
-                data_byte   <= (others => '0');
-                valid_reg   <= '0';
-                crc_fail    <= '0';
+            elsif win_cnt > 0 then             -- החזקת valid
+                valid_reg <= '1';
+                win_cnt   <= win_cnt - 1;
 
             else
-                valid_reg   <= '0';
-                crc_fail    <= '0';
-
-                if rx_rising_edge = '1' then
-                    case state is
-                        when IDLE =>
-                            data_byte <= rx_data_in;
-                            state <= WAIT_CRC;
-                            report "[DEBUG] Received data byte: " & integer'image(to_integer(unsigned(rx_data_in))) severity note;
-
-                        when WAIT_CRC =>
-                            -- TEMPORARY BYPASS: CRC check is disabled for system test
-                            valid_reg <= '1';
-                            report "[DEBUG][TEMP] CRC check bypassed. Forwarding data to decryption anyway: " & integer'image(to_integer(unsigned(data_byte))) severity note;
-                            state <= IDLE;
-                    end case;
-                end if;
+                valid_reg <= '0';
             end if;
         end if;
     end process;
 
-    received_data         <= data_byte;
-    received_valid        <= valid_reg;
-    crc_error             <= '0';  -- Always zero while CRC is bypassed
-    crc_error_led         <= '0';
-    to_decryption         <= data_byte;
-    valid_to_decryption   <= valid_reg;
-
-end Behavioral;
+    --------------------------------------------------------------------
+    -- יציאות
+    received_data        <= data_reg;
+    received_valid       <= valid_reg;
+    to_decryption        <= data_reg;
+    valid_to_decryption  <= valid_reg;
+    crc_error            <= '0';              -- עדיין לא ממומש
+    parity_out           <= calc_parity(data_reg);
+    crc_out              <= calc_crc8(data_reg);
+end architecture;

@@ -1,7 +1,0 @@
-Running: xsim.dir/input_layer_top_heavy_tb_behav/xsimk -simmode gui -wdb input_layer_top_heavy_tb_behav.wdb -simrunnum 0 -socket 40629
-Design successfully loaded
-Design Loading Memory Usage: 34616 KB (Peak: 35200 KB)
-Design Loading CPU Usage: 60 ms
-Simulation completed
-Simulation Memory Usage: 116352 KB (Peak: 173884 KB)
-Simulation CPU Usage: 80 ms

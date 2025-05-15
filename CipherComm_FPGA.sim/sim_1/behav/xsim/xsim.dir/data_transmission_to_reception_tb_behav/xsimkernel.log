@@ -1,7 +1,0 @@
-Running: xsim.dir/data_transmission_to_reception_tb_behav/xsimk -simmode gui -wdb data_transmission_to_reception_tb_behav.wdb -simrunnum 0 -socket 57523
-Design successfully loaded
-Design Loading Memory Usage: 34620 KB (Peak: 35200 KB)
-Design Loading CPU Usage: 50 ms
-Simulation completed
-Simulation Memory Usage: 116356 KB (Peak: 173888 KB)
-Simulation CPU Usage: 70 ms

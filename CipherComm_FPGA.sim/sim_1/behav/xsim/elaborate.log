@@ -1,6 +1,6 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto d3c2ade0781f47a3ae4dc4bae335a349 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_level_tb_behav xil_defaultlib.top_level_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto d3c2ade0781f47a3ae4dc4bae335a349 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_level_full_system_tb_behav xil_defaultlib.top_level_full_system_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -16,23 +16,25 @@ Compiling package vl.vl_types
 Compiling module xil_defaultlib.glbl
 Compiling architecture behavioral of entity xil_defaultlib.multi_comm_input [multi_comm_input_default]
 Compiling architecture behavioral of entity xil_defaultlib.bram_fsm_controller [bram_fsm_controller_default]
-Compiling architecture structural of entity xil_defaultlib.input_layer_top [input_layer_top_default]
+Compiling architecture structural of entity xil_defaultlib.input_layer_top [\input_layer_top(observation_win...]
 Compiling architecture behavioral of entity xil_defaultlib.encoder_layer [encoder_layer_default]
 Compiling architecture behavioral of entity xil_defaultlib.scrambler [scrambler_default]
 Compiling architecture behavioral of entity xil_defaultlib.encryption_logic [encryption_logic_default]
 Compiling architecture behavioral of entity xil_defaultlib.encryption_interface [encryption_interface_default]
 Compiling architecture behavioral of entity xil_defaultlib.encryption_layer [encryption_layer_default]
-Compiling architecture behavioral of entity xil_defaultlib.encryption_to_fifo_bridge [encryption_to_fifo_bridge_defaul...]
+Compiling architecture behavioral of entity xil_defaultlib.encryption_to_fifo_bridge [\encryption_to_fifo_bridge(obser...]
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.fifo_generator_0
-Compiling architecture behavioral of entity xil_defaultlib.data_transmission [data_transmission_default]
-Compiling architecture behavioral of entity xil_defaultlib.data_reception [data_reception_default]
-Compiling architecture behavioral of entity xil_defaultlib.decryption_logic [decryption_logic_default]
-Compiling architecture behavioral of entity xil_defaultlib.unscrambler [unscrambler_default]
-Compiling architecture behavioral of entity xil_defaultlib.decoding [decoding_default]
-Compiling architecture behavioral of entity xil_defaultlib.output_display [output_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_transmission [\data_transmission(observation_w...]
+Compiling architecture behavioral of entity xil_defaultlib.data_reception [\data_reception(observation_wind...]
+Compiling architecture behavioral of entity xil_defaultlib.decryption_logic [\decryption_logic(observation_wi...]
+Compiling architecture behavioral of entity xil_defaultlib.unscrambler [\unscrambler(observation_window_...]
+Compiling architecture behavioral of entity xil_defaultlib.decoding [\decoding(observation_window_cyc...]
+Compiling architecture behavioral of entity xil_defaultlib.debug_uart_logger [\debug_uart_logger(observation_w...]
+Compiling architecture behavioral of entity xil_defaultlib.uart_fifo_tx [uart_fifo_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_display [\output_display(observation_wind...]
 Compiling architecture structural of entity xil_defaultlib.top_level [top_level_default]
-Compiling architecture sim of entity xil_defaultlib.top_level_tb
-Built simulation snapshot top_level_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.top_level_full_system_tb
+Built simulation snapshot top_level_full_system_tb_behav

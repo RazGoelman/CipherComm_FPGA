@@ -1,7 +1,0 @@
-Running: xsim.dir/decrypt_unscramble_decode_tb_behav/xsimk -simmode gui -wdb decrypt_unscramble_decode_tb_behav.wdb -simrunnum 0 -socket 37403
-Design successfully loaded
-Design Loading Memory Usage: 34616 KB (Peak: 35200 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 116352 KB (Peak: 173884 KB)
-Simulation CPU Usage: 40 ms

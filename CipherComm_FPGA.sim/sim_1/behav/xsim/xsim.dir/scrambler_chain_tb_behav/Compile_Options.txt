@@ -1,1 +1,0 @@
--wto "d3c2ade0781f47a3ae4dc4bae335a349" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "scrambler_chain_tb_behav" "xil_defaultlib.scrambler_chain_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
